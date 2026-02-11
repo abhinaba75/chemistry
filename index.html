@@ -1,0 +1,2316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aldehydes, Ketones & Carboxylic Acids | CBSE Class 12 Chemistry</title>
+    <meta name="description"
+        content="Complete CBSE Class 12 Chemistry - Chapter 8: Aldehydes, Ketones and Carboxylic Acids with step-by-step reaction mechanisms">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+    <div class="bg-animation"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo"><i class="fas fa-atom"></i> ChemLearn</div>
+            <button class="mobile-nav-toggle" onclick="toggleNav()"><i class="fas fa-bars"></i></button>
+            <nav>
+                <ul id="navMenu">
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#nomenclature">Nomenclature</a></li>
+                    <li><a href="#preparation">Preparation</a></li>
+                    <li><a href="#reactions">Reactions</a></li>
+                    <li><a href="#carboxylic">Carboxylic Acids</a></li>
+                    <li><a href="#quiz">Quiz</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>🧪 Aldehydes, Ketones & Carboxylic Acids</h1>
+            <p>Master CBSE Class 12 Chemistry Chapter 8 with detailed explanations, step-by-step reaction mechanisms,
+                and interactive learning</p>
+            <div class="hero-badges">
+                <span class="badge badge-aldehyde">Aldehydes (R-CHO)</span>
+                <span class="badge badge-ketone">Ketones (R-CO-R')</span>
+                <span class="badge badge-acid">Carboxylic Acids (R-COOH)</span>
+            </div>
+            <a href="#introduction" class="btn-primary"
+                style="display: inline-block; padding: 1rem 2rem; background: var(--gradient-1); color: white; text-decoration: none; border-radius: 50px; font-weight: 600;">Start
+                Learning <i class="fas fa-arrow-down"></i></a>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="section" id="introduction">
+        <h2 class="section-title">Introduction to Carbonyl Compounds</h2>
+        <p class="section-subtitle">Understanding the foundation of organic chemistry's most important functional groups
+        </p>
+
+        <div class="card-grid">
+            <div class="card">
+                <h3><i class="fas fa-flask" style="color: var(--primary);"></i> The Carbonyl Group (>C=O)</h3>
+                <p>The carbonyl group is one of the most important functional groups in organic chemistry. It consists
+                    of a carbon atom double-bonded to an oxygen atom. This group is highly polar due to the
+                    electronegativity difference between carbon and oxygen.</p>
+                <div class="highlight-box info">
+                    <strong>Key Point:</strong> The carbonyl carbon is sp² hybridized with bond angles of approximately
+                    120°. The π-electron cloud lies above and below the plane of the molecule.
+                </div>
+            </div>
+
+            <div class="card">
+                <h3><i class="fas fa-atom" style="color: var(--secondary);"></i> Electronic Structure</h3>
+                <p>Due to higher electronegativity of oxygen:</p>
+                <ul style="margin-left: 1.5rem; color: var(--text-secondary);">
+                    <li>Carbonyl carbon is <strong style="color: var(--accent);">electrophilic</strong> (Lewis acid)
+                    </li>
+                    <li>Carbonyl oxygen is <strong style="color: var(--secondary);">nucleophilic</strong> (Lewis base)
+                    </li>
+                    <li>The C=O bond is polar with significant dipole moment</li>
+                </ul>
+                <div class="equation">
+                    <span class="formula">δ⁺C=Oδ⁻</span>
+                    <span class="conditions">Partial charges due to electronegativity difference</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3><i class="fas fa-lightbulb" style="color: var(--accent);"></i> Types of Carbonyl Compounds</h3>
+                <div class="structure-container" style="justify-content: flex-start;">
+                    <div class="structure-item">
+                        <div class="formula">R-CHO</div>
+                        <div class="name">Aldehyde</div>
+                    </div>
+                    <div class="structure-item">
+                        <div class="formula">R-CO-R'</div>
+                        <div class="name">Ketone</div>
+                    </div>
+                    <div class="structure-item">
+                        <div class="formula">R-COOH</div>
+                        <div class="name">Carboxylic Acid</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="highlight-box success" style="margin-top: 2rem;">
+            <h4 style="color: var(--success); margin-bottom: 0.5rem;"><i class="fas fa-tree"></i> Natural Occurrence
+            </h4>
+            <p>These compounds are widespread in nature:</p>
+            <ul style="margin-left: 1.5rem;">
+                <li><strong>Vanillin</strong> - from vanilla beans (aldehyde)</li>
+                <li><strong>Cinnamaldehyde</strong> - from cinnamon (aldehyde)</li>
+                <li><strong>Camphor</strong> - from camphor tree (ketone)</li>
+                <li><strong>Acetic acid</strong> - in vinegar (carboxylic acid)</li>
+                <li><strong>Formic acid</strong> - from red ants (carboxylic acid)</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Nomenclature Section -->
+    <section class="section" id="nomenclature">
+        <h2 class="section-title">Nomenclature</h2>
+        <p class="section-subtitle">Learn to name aldehydes, ketones, and carboxylic acids using IUPAC and common naming
+            systems</p>
+
+        <div class="tabs">
+            <div class="tab-buttons">
+                <button class="tab-btn active" onclick="openTab(event, 'aldehydeNaming')">Aldehydes</button>
+                <button class="tab-btn" onclick="openTab(event, 'ketoneNaming')">Ketones</button>
+                <button class="tab-btn" onclick="openTab(event, 'acidNaming')">Carboxylic Acids</button>
+            </div>
+
+            <div id="aldehydeNaming" class="tab-content active">
+                <h3 style="color: var(--primary); margin-bottom: 1rem;">Aldehyde Nomenclature</h3>
+
+                <div class="highlight-box info">
+                    <strong>IUPAC Rule:</strong> Replace <em>-e</em> of parent alkane with <strong>-al</strong>. The
+                    aldehyde carbon is always numbered as carbon 1.
+                </div>
+
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Structure</th>
+                            <th>Common Name</th>
+                            <th>IUPAC Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HCHO</td>
+                            <td>Formaldehyde</td>
+                            <td>Methanal</td>
+                        </tr>
+                        <tr>
+                            <td>CH₃CHO</td>
+                            <td>Acetaldehyde</td>
+                            <td>Ethanal</td>
+                        </tr>
+                        <tr>
+                            <td>CH₃CH₂CHO</td>
+                            <td>Propionaldehyde</td>
+                            <td>Propanal</td>
+                        </tr>
+                        <tr>
+                            <td>(CH₃)₂CHCHO</td>
+                            <td>Isobutyraldehyde</td>
+                            <td>2-Methylpropanal</td>
+                        </tr>
+                        <tr>
+                            <td>CH₂=CHCHO</td>
+                            <td>Acrolein</td>
+                            <td>Prop-2-enal</td>
+                        </tr>
+                        <tr>
+                            <td>C₆H₅CHO</td>
+                            <td>Benzaldehyde</td>
+                            <td>Benzenecarbaldehyde</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="highlight-box">
+                    <strong>Common Naming:</strong> Derived from corresponding carboxylic acid by replacing <em>-ic
+                        acid</em> with <em>-aldehyde</em>. Substituent positions are indicated by Greek letters (α, β,
+                    γ, δ...) where α-carbon is directly attached to CHO.
+                </div>
+            </div>
+
+            <div id="ketoneNaming" class="tab-content">
+                <h3 style="color: var(--secondary); margin-bottom: 1rem;">Ketone Nomenclature</h3>
+
+                <div class="highlight-box info">
+                    <strong>IUPAC Rule:</strong> Replace <em>-e</em> of parent alkane with <strong>-one</strong>.
+                    Numbering starts from the end nearer to the carbonyl group.
+                </div>
+
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Structure</th>
+                            <th>Common Name</th>
+                            <th>IUPAC Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>CH₃COCH₃</td>
+                            <td>Acetone / Dimethyl ketone</td>
+                            <td>Propan-2-one</td>
+                        </tr>
+                        <tr>
+                            <td>CH₃COCH₂CH₃</td>
+                            <td>Ethyl methyl ketone</td>
+                            <td>Butan-2-one</td>
+                        </tr>
+                        <tr>
+                            <td>CH₃COCH₂CH₂CH₃</td>
+                            <td>Methyl n-propyl ketone</td>
+                            <td>Pentan-2-one</td>
+                        </tr>
+                        <tr>
+                            <td>(CH₃)₂CHCOCH(CH₃)₂</td>
+                            <td>Diisopropyl ketone</td>
+                            <td>2,4-Dimethylpentan-3-one</td>
+                        </tr>
+                        <tr>
+                            <td>C₆H₅COCH₃</td>
+                            <td>Acetophenone</td>
+                            <td>1-Phenylethan-1-one</td>
+                        </tr>
+                        <tr>
+                            <td>C₆H₅COC₆H₅</td>
+                            <td>Benzophenone</td>
+                            <td>Diphenylmethanone</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="highlight-box">
+                    <strong>Common Naming:</strong> Name both alkyl/aryl groups attached to carbonyl followed by
+                    "ketone". Substituent positions indicated by α, α', β, β' etc.
+                </div>
+            </div>
+
+            <div id="acidNaming" class="tab-content">
+                <h3 style="color: var(--accent); margin-bottom: 1rem;">Carboxylic Acid Nomenclature</h3>
+
+                <div class="highlight-box info">
+                    <strong>IUPAC Rule:</strong> Replace <em>-e</em> of parent alkane with <strong>-oic acid</strong>.
+                    The carboxyl carbon is always numbered as carbon 1.
+                </div>
+
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Structure</th>
+                            <th>Common Name</th>
+                            <th>IUPAC Name</th>
+                            <th>Source</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HCOOH</td>
+                            <td>Formic acid</td>
+                            <td>Methanoic acid</td>
+                            <td>Ants (formica)</td>
+                        </tr>
+                        <tr>
+                            <td>CH₃COOH</td>
+                            <td>Acetic acid</td>
+                            <td>Ethanoic acid</td>
+                            <td>Vinegar (acetum)</td>
+                        </tr>
+                        <tr>
+                            <td>CH₃CH₂COOH</td>
+                            <td>Propionic acid</td>
+                            <td>Propanoic acid</td>
+                            <td>Dairy products</td>
+                        </tr>
+                        <tr>
+                            <td>CH₃(CH₂)₂COOH</td>
+                            <td>Butyric acid</td>
+                            <td>Butanoic acid</td>
+                            <td>Rancid butter</td>
+                        </tr>
+                        <tr>
+                            <td>C₆H₅COOH</td>
+                            <td>Benzoic acid</td>
+                            <td>Benzenecarboxylic acid</td>
+                            <td>Benzoin resin</td>
+                        </tr>
+                        <tr>
+                            <td>HOOC-COOH</td>
+                            <td>Oxalic acid</td>
+                            <td>Ethanedioic acid</td>
+                            <td>Wood sorrel</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="highlight-box success">
+                    <strong>Fatty Acids:</strong> Higher carboxylic acids (C₁₂-C₁₈) are called fatty acids as they occur
+                    in natural fats as esters of glycerol. Examples: Lauric acid (C₁₂), Palmitic acid (C₁₆), Stearic
+                    acid (C₁₈).
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preparation Methods Section -->
+    <section class="section" id="preparation">
+        <h2 class="section-title">Methods of Preparation</h2>
+        <p class="section-subtitle">Learn the various synthetic routes to prepare aldehydes and ketones</p>
+
+        <div class="accordion">
+            <!-- Method 1: Oxidation of Alcohols -->
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <h4><i class="fas fa-fire" style="color: var(--danger);"></i> 1. Oxidation of Alcohols</h4>
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Primary alcohols give aldehydes, secondary alcohols give ketones.</p>
+
+                    <div class="mechanism-box">
+                        <h4><i class="fas fa-cogs"></i> Reaction with PCC (Pyridinium Chlorochromate)</h4>
+                        <div class="equation">
+                            <span class="reactants">R-CH₂OH</span>
+                            <span class="arrow">→</span>
+                            <span class="products">R-CHO + H₂O</span>
+                            <span class="conditions">PCC / CH₂Cl₂</span>
+                        </div>
+                        <div class="bond-diagram">
+                            <div class="bond-diagram-title">🔬 Bond changes in oxidation:</div>
+                            <div class="bond-row">
+                                <span class="atom atom-c">R—C</span>
+                                <span class="bond bond-single bond-break">—</span>
+                                <span class="atom atom-h">H</span>
+                                &nbsp;&nbsp;
+                                <span class="atom atom-o">O</span>
+                                <span class="bond bond-single bond-break">—</span>
+                                <span class="atom atom-h">H</span>
+                            </div>
+                            <div class="stage-arrow">⟱ lose 2H (oxidation)</div>
+                            <div class="bond-row">
+                                <span class="atom atom-c">R—C</span>
+                                <span class="bond bond-double bond-form">═</span>
+                                <span class="atom atom-o">O</span>
+                                &nbsp;+&nbsp;
+                                <span class="atom atom-h">H₂O</span>
+                            </div>
+                        </div>
+                        <div class="bond-summary">
+                            <ul>
+                                <li class="breaks">C—H bond breaks (on carbon bearing OH)</li>
+                                <li class="breaks">O—H bond breaks</li>
+                                <li class="forms">C═O π bond forms (aldehyde!)</li>
+                                <li class="moves">Cr(VI) → Cr(III) — oxidant gets reduced</li>
+                            </ul>
+                        </div>
+
+                        <div class="equation">
+                            <span class="reactants">R-CHOH-R'</span>
+                            <span class="arrow">→</span>
+                            <span class="products">R-CO-R' + H₂O</span>
+                            <span class="conditions">CrO₃ / H₂SO₄ (Jones Reagent)</span>
+                        </div>
+                        <div class="bond-summary">
+                            <ul>
+                                <li class="breaks">Same pattern: C—H + O—H break</li>
+                                <li class="forms">C═O π bond forms (ketone!)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="highlight-box info">
+                        <strong>Why PCC?</strong> PCC is a mild oxidizing agent that stops at the aldehyde stage and
+                        doesn't further oxidize to carboxylic acid. It works in anhydrous conditions in CH₂Cl₂.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Method 2: Dehydrogenation -->
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <h4><i class="fas fa-industry" style="color: var(--secondary);"></i> 2. Dehydrogenation of Alcohols
+                        (Industrial)</h4>
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Industrial method: Alcohol vapors passed over heavy metal catalysts at high temperature.</p>
+
+                    <div class="equation">
+                        <span class="reactants">R-CH₂OH</span>
+                        <span class="arrow">→</span>
+                        <span class="products">R-CHO + H₂↑</span>
+                        <span class="conditions">Cu or Ag, 573 K</span>
+                    </div>
+                    <div class="bond-diagram">
+                        <div class="bond-diagram-title">🔬 Bond changes:</div>
+                        <div class="bond-row">
+                            <span class="atom atom-c">R—C</span>
+                            <span class="bond bond-single bond-break">—</span>
+                            <span class="atom atom-h">H</span>
+                            &nbsp;&nbsp;
+                            <span class="atom atom-o">O</span>
+                            <span class="bond bond-single bond-break">—</span>
+                            <span class="atom atom-h">H</span>
+                        </div>
+                        <div class="stage-arrow">⟱ H₂ leaves as gas</div>
+                        <div class="bond-row">
+                            <span class="atom atom-c">R—C</span>
+                            <span class="bond bond-double bond-form">═</span>
+                            <span class="atom atom-o">O</span>
+                            &nbsp;+&nbsp;
+                            <span class="atom atom-h">H—H↑</span>
+                        </div>
+                    </div>
+                    <div class="bond-summary">
+                        <ul>
+                            <li class="breaks">C—H bond breaks (α-hydrogen)</li>
+                            <li class="breaks">O—H bond breaks</li>
+                            <li class="forms">C═O π bond forms</li>
+                            <li class="forms">H—H bond forms (H₂ gas evolved)</li>
+                            <li class="moves">De-hydrogen-ation = removal of H₂!</li>
+                        </ul>
+                    </div>
+
+                    <div class="highlight-box">
+                        <strong>Catalyst Used:</strong> Copper (Cu) or Silver (Ag) at 300°C.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Method 3: Ozonolysis -->
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <h4><i class="fas fa-cloud" style="color: var(--primary);"></i> 3. Ozonolysis of Alkenes</h4>
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Alkenes react with ozone to form ozonide, which on reductive workup gives carbonyl compounds.</p>
+
+                    <div class="equation">
+                        <span class="reactants">CH₃-CH=CH-CH₃</span>
+                        <span class="arrow">→</span>
+                        <span class="products">2 CH₃CHO</span>
+                        <span class="conditions">1. O₃ 2. Zn/H₂O</span>
+                    </div>
+
+                    <div class="mechanism-box">
+                        <h4><i class="fas fa-cogs"></i> Mechanism — Bond by Bond</h4>
+                        <div class="mechanism-steps">
+                            <div class="step">
+                                <span class="step-number">1</span>
+                                <div class="step-content">
+                                    <h5>Ozone adds to C═C ([3+2] cycloaddition)</h5>
+                                    <div class="bond-diagram">
+                                        <div class="bond-row">
+                                            <span class="atom atom-c">C</span>
+                                            <span class="bond bond-double bond-break">═</span>
+                                            <span class="atom atom-c">C</span>
+                                            &nbsp;+&nbsp;
+                                            <span class="atom atom-o">O₃</span>
+                                        </div>
+                                        <div class="stage-arrow">⟱</div>
+                                        <div class="bond-row">
+                                            <span class="atom atom-c">C</span>
+                                            <span class="bond bond-single bond-form">—</span>
+                                            <span class="atom atom-o">O—O—O</span>
+                                            <span class="bond bond-single bond-form">—</span>
+                                            <span class="atom atom-c">C</span>
+                                            &nbsp;(molozonide ring)
+                                        </div>
+                                    </div>
+                                    <div class="bond-summary">
+                                        <ul>
+                                            <li class="breaks">C═C π bond breaks</li>
+                                            <li class="forms">2× new C—O bonds form (5-membered ring)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">2</span>
+                                <div class="step-content">
+                                    <h5>Rearrangement → Ozonide</h5>
+                                    <p>Molozonide is unstable → rearranges to ozonide (C—O bonds break and re-form)</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">3</span>
+                                <div class="step-content">
+                                    <h5>Reductive Cleavage (Zn/H₂O)</h5>
+                                    <div class="bond-diagram">
+                                        <div class="bond-row">
+                                            <span class="atom atom-c">C</span>
+                                            <span class="bond bond-single bond-break">—</span>
+                                            <span class="atom atom-o">O</span>
+                                            <span class="bond bond-single bond-break">—</span>
+                                            <span class="atom atom-c">C</span>
+                                            &nbsp;(ozonide ring)
+                                        </div>
+                                        <div class="stage-arrow">⟱ Zn reduces — ring breaks open</div>
+                                        <div class="bond-row">
+                                            <span class="atom atom-c">C</span>
+                                            <span class="bond bond-double bond-form">═</span>
+                                            <span class="atom atom-o">O</span>
+                                            &nbsp;+&nbsp;
+                                            <span class="atom atom-o">O</span>
+                                            <span class="bond bond-double bond-form">═</span>
+                                            <span class="atom atom-c">C</span>
+                                        </div>
+                                    </div>
+                                    <div class="bond-summary">
+                                        <ul>
+                                            <li class="breaks">Both C—O bonds in ozonide break</li>
+                                            <li class="forms">2× C═O bonds form → 2 carbonyl compounds!</li>
+                                            <li class="moves">Each carbon gets its own C═O</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Method 4: Rosenmund Reduction -->
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <h4><i class="fas fa-star" style="color: var(--accent);"></i> 4. Rosenmund Reduction</h4>
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Acyl chlorides are selectively reduced to aldehydes using H₂ with poisoned palladium catalyst.
+                    </p>
+
+                    <div class="equation">
+                        <span class="reactants">R-COCl + H₂</span>
+                        <span class="arrow">→</span>
+                        <span class="products">R-CHO + HCl</span>
+                        <span class="conditions">Pd-BaSO₄ (poisoned with S or quinoline)</span>
+                    </div>
+                    <div class="bond-diagram">
+                        <div class="bond-diagram-title">🔬 Bond changes:</div>
+                        <div class="bond-row">
+                            <span class="atom atom-c">R—C(=O)</span>
+                            <span class="bond bond-single bond-break">—</span>
+                            <span class="atom atom-halogen">Cl</span>
+                            &nbsp;+&nbsp;
+                            <span class="atom atom-h">H</span>
+                            <span class="bond bond-single bond-break">—</span>
+                            <span class="atom atom-h">H</span>
+                        </div>
+                        <div class="stage-arrow">⟱</div>
+                        <div class="bond-row">
+                            <span class="atom atom-c">R—C(=O)</span>
+                            <span class="bond bond-single bond-form">—</span>
+                            <span class="atom atom-h">H</span>
+                            &nbsp;+&nbsp;
+                            <span class="atom atom-h">H</span>
+                            <span class="bond bond-single bond-form">—</span>
+                            <span class="atom atom-halogen">Cl</span>
+                        </div>
+                    </div>
+                    <div class="bond-summary">
+                        <ul>
+                            <li class="breaks">C—Cl bond breaks</li>
+                            <li class="breaks">H—H bond breaks</li>
+                            <li class="forms">C—H bond forms (→ aldehyde!)</li>
+                            <li class="forms">H—Cl bond forms</li>
+                            <li class="moves">Cl replaced by H — selective partial reduction</li>
+                        </ul>
+                    </div>
+
+                    <div class="highlight-box info">
+                        <strong>Why poisoned catalyst?</strong> The catalyst is partially deactivated (poisoned) with
+                        sulfur or quinoline to prevent over-reduction of aldehyde to alcohol.
+                    </div>
+
+                    <div class="highlight-box">
+                        <strong>Note:</strong> Formaldehyde (HCHO) cannot be prepared by this method as HCOCl is
+                        unstable.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Method 5: Stephen Reaction -->
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <h4><i class="fas fa-flask" style="color: var(--success);"></i> 5. Stephen Reaction</h4>
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Nitriles are reduced to aldehydes via imine intermediate.</p>
+
+                    <div class="equation">
+                        <span class="reactants">R-C≡N</span>
+                        <span class="arrow">→</span>
+                        <span class="products">[R-CH=NH]⁺Cl⁻</span>
+                        <span class="arrow">→</span>
+                        <span class="products">R-CHO</span>
+                        <span class="conditions">1. SnCl₂/HCl 2. H₃O⁺</span>
+                    </div>
+
+                    <div class="mechanism-box">
+                        <h4><i class="fas fa-cogs"></i> Mechanism — Bond by Bond</h4>
+                        <div class="mechanism-steps">
+                            <div class="step">
+                                <span class="step-number">1</span>
+                                <div class="step-content">
+                                    <h5>Reduction to Imine (SnCl₂/HCl)</h5>
+                                    <div class="bond-diagram">
+                                        <div class="bond-row">
+                                            <span class="atom atom-c">R—C</span>
+                                            <span class="bond bond-double bond-break">≡</span>
+                                            <span class="atom atom-n">N</span>
+                                            &nbsp;+ 2[H]
+                                        </div>
+                                        <div class="stage-arrow">⟱ add 2H across C≡N</div>
+                                        <div class="bond-row">
+                                            <span class="atom atom-c">R—C</span>
+                                            <span class="bond bond-single bond-form">—</span>
+                                            <span class="atom atom-h">H</span>
+                                            &nbsp;
+                                            <span class="bond bond-double">═</span>
+                                            <span class="atom atom-n">NH</span>
+                                            &nbsp;(imine)
+                                        </div>
+                                    </div>
+                                    <div class="bond-summary">
+                                        <ul>
+                                            <li class="breaks">C≡N triple bond → C═N double bond (one π breaks)</li>
+                                            <li class="forms">C—H bond forms</li>
+                                            <li class="forms">N—H bond forms</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">2</span>
+                                <div class="step-content">
+                                    <h5>Hydrolysis of Imine → Aldehyde</h5>
+                                    <div class="bond-diagram">
+                                        <div class="bond-row">
+                                            <span class="atom atom-c">R—CH</span>
+                                            <span class="bond bond-double bond-break">═</span>
+                                            <span class="atom atom-n">NH</span>
+                                            &nbsp;+ H₂O
+                                        </div>
+                                        <div class="stage-arrow">⟱ N replaced by O</div>
+                                        <div class="bond-row">
+                                            <span class="atom atom-c">R—CH</span>
+                                            <span class="bond bond-double bond-form">═</span>
+                                            <span class="atom atom-o">O</span>
+                                            &nbsp;+&nbsp;
+                                            <span class="atom atom-n">NH₃</span>
+                                        </div>
+                                    </div>
+                                    <div class="bond-summary">
+                                        <ul>
+                                            <li class="breaks">C═N bond breaks completely</li>
+                                            <li class="forms">C═O bond forms (→ aldehyde!)</li>
+                                            <li class="moves">NH₃ released as by-product</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Method 6: Etard Reaction -->
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <h4><i class="fas fa-vial" style="color: var(--danger);"></i> 6. Etard Reaction</h4>
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Oxidation of methyl group in toluene to benzaldehyde using chromyl chloride.</p>
+
+                    <div class="equation">
+                        <span class="reactants">C₆H₅-CH₃ + CrO₂Cl₂</span>
+                        <span class="arrow">→</span>
+                        <span class="products">[Complex]</span>
+                        <span class="arrow">→</span>
+                        <span class="products">C₆H₅-CHO</span>
+                        <span class="conditions">1. CS₂ 2. H₃O⁺</span>
+                    </div>
+                    <div class="bond-diagram">
+                        <div class="bond-diagram-title">🔬 Bond changes:</div>
+                        <div class="bond-row">
+                            <span class="atom atom-c">C₆H₅—CH₃</span>
+                            &nbsp;→&nbsp;
+                            <span class="atom atom-c">C₆H₅—CH</span>
+                            <span class="bond bond-double bond-form">═</span>
+                            <span class="atom atom-o">O</span>
+                        </div>
+                    </div>
+                    <div class="bond-summary">
+                        <ul>
+                            <li class="breaks">2× C—H bonds break (from —CH₃)</li>
+                            <li class="forms">C═O π bond forms</li>
+                            <li class="moves">Cr(VI) acts as oxidant → Cr(III)</li>
+                            <li class="moves">Stops at aldehyde (doesn’t over-oxidize)</li>
+                        </ul>
+                    </div>
+
+                    <div class="highlight-box info">
+                        <strong>Chromyl chloride (CrO₂Cl₂)</strong> oxidizes the -CH₃ group to form a brown chromium
+                        complex. Hydrolysis of this complex yields the aldehyde.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Method 7: Gatterman-Koch Reaction -->
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <h4><i class="fas fa-atom" style="color: var(--primary);"></i> 7. Gatterman-Koch Reaction</h4>
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Direct formylation of benzene to produce benzaldehyde.</p>
+
+                    <div class="equation">
+                        <span class="reactants">C₆H₆ + CO + HCl</span>
+                        <span class="arrow">→</span>
+                        <span class="products">C₆H₅-CHO</span>
+                        <span class="conditions">Anhydrous AlCl₃/CuCl</span>
+                    </div>
+
+                    <div class="mechanism-box">
+                        <h4><i class="fas fa-cogs"></i> Mechanism — Bond by Bond (EAS)</h4>
+                        <div class="mechanism-steps">
+                            <div class="step">
+                                <span class="step-number">1</span>
+                                <div class="step-content">
+                                    <h5>Formyl Cation Generation</h5>
+                                    <div class="bond-diagram">
+                                        <div class="bond-row">
+                                            <span class="atom atom-c">CO</span>
+                                            &nbsp;+&nbsp;
+                                            <span class="atom atom-h">H</span>
+                                            <span class="bond bond-single bond-break">—</span>
+                                            <span class="atom atom-halogen">Cl</span>
+                                            &nbsp;+&nbsp;
+                                            <span class="atom atom-c">AlCl₃</span>
+                                        </div>
+                                        <div class="stage-arrow">⟱</div>
+                                        <div class="bond-row">
+                                            <span class="atom atom-accent">[H—C═O]⁺</span>
+                                            &nbsp;+&nbsp;
+                                            <span class="atom atom-halogen">[AlCl₄]⁻</span>
+                                        </div>
+                                    </div>
+                                    <div class="bond-summary">
+                                        <ul>
+                                            <li class="breaks">H—Cl bond breaks</li>
+                                            <li class="forms">C—H bond forms in formyl cation</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">2</span>
+                                <div class="step-content">
+                                    <h5>Electrophilic Attack on Benzene</h5>
+                                    <div class="bond-diagram">
+                                        <div class="bond-row">
+                                            <span class="atom atom-accent">[CHO]⁺</span>
+                                            <span class="e-flow">⟶</span>
+                                            <span class="atom atom-c">C₆H₆</span>
+                                            &nbsp;(π cloud)
+                                        </div>
+                                        <div class="stage-arrow">⟱</div>
+                                        <div class="bond-row">
+                                            <span class="atom atom-c">C₆H₅</span>
+                                            <span class="bond bond-single bond-form">—</span>
+                                            <span class="atom atom-c">CHO</span>
+                                            &nbsp;(σ-complex)
+                                        </div>
+                                    </div>
+                                    <div class="bond-summary">
+                                        <ul>
+                                            <li class="breaks">C═C aromaticity temporarily lost</li>
+                                            <li class="forms">New C—C bond forms (ring to CHO)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">3</span>
+                                <div class="step-content">
+                                    <h5>Deprotonation → Benzaldehyde</h5>
+                                    <div class="bond-summary">
+                                        <ul>
+                                            <li class="breaks">C—H bond breaks (ring H leaves as H⁺)</li>
+                                            <li class="forms">Aromaticity restored!</li>
+                                            <li class="moves">AlCl₃ regenerated as catalyst</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Method 8: Friedel-Crafts Acylation -->
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <h4><i class="fas fa-bolt" style="color: var(--accent);"></i> 8. Friedel-Crafts Acylation (for
+                        Ketones)</h4>
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Aromatic ketones are prepared by treating benzene with acyl chlorides in presence of Lewis acid.
+                    </p>
+
+                    <div class="equation">
+                        <span class="reactants">C₆H₆ + R-COCl</span>
+                        <span class="arrow">→</span>
+                        <span class="products">C₆H₅-CO-R + HCl</span>
+                        <span class="conditions">Anhydrous AlCl₃</span>
+                    </div>
+
+                    <div class="mechanism-box">
+                        <h4><i class="fas fa-cogs"></i> Mechanism — Bond by Bond (EAS)</h4>
+                        <div class="mechanism-steps">
+                            <div class="step">
+                                <span class="step-number">1</span>
+                                <div class="step-content">
+                                    <h5>Acylium Ion Formation</h5>
+                                    <div class="bond-diagram">
+                                        <div class="bond-row">
+                                            <span class="atom atom-c">R—CO</span>
+                                            <span class="bond bond-single bond-break">—</span>
+                                            <span class="atom atom-halogen">Cl</span>
+                                            &nbsp;+&nbsp;
+                                            <span class="atom atom-c">AlCl₃</span>
+                                        </div>
+                                        <div class="stage-arrow">⟱</div>
+                                        <div class="bond-row">
+                                            <span class="atom atom-accent">[R—C≡O]⁺</span>
+                                            &nbsp;+&nbsp;
+                                            <span class="atom atom-halogen">[AlCl₄]⁻</span>
+                                        </div>
+                                    </div>
+                                    <div class="bond-summary">
+                                        <ul>
+                                            <li class="breaks">C—Cl bond breaks (Lewis acid pulls Cl)</li>
+                                            <li class="forms">Acylium ion formed (resonance-stabilized!)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">2</span>
+                                <div class="step-content">
+                                    <h5>Electrophilic Attack on Benzene</h5>
+                                    <div class="bond-diagram">
+                                        <div class="bond-row">
+                                            <span class="atom atom-accent">[RCO]⁺</span>
+                                            <span class="e-flow">⟶</span>
+                                            <span class="atom atom-c">C₆H₆</span>
+                                            &nbsp;(π cloud)
+                                        </div>
+                                        <div class="stage-arrow">⟱</div>
+                                        <div class="bond-row">
+                                            <span class="atom atom-c">C₆H₅</span>
+                                            <span class="bond bond-single bond-form">—</span>
+                                            <span class="atom atom-c">CO—R</span>
+                                            &nbsp;(σ-complex)
+                                        </div>
+                                    </div>
+                                    <div class="bond-summary">
+                                        <ul>
+                                            <li class="breaks">C═C aromaticity temporarily lost</li>
+                                            <li class="forms">New C—C bond forms (ring to acyl)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">3</span>
+                                <div class="step-content">
+                                    <h5>Deprotonation → Ketone</h5>
+                                    <div class="bond-summary">
+                                        <ul>
+                                            <li class="breaks">C—H bond breaks (ring H leaves as H⁺)</li>
+                                            <li class="forms">Aromaticity restored → aromatic ketone!</li>
+                                            <li class="moves">AlCl₃ regenerated, no rearrangement!</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="highlight-box success">
+                        <strong>Advantage over Alkylation:</strong> Unlike Friedel-Crafts alkylation, acylation doesn't
+                        suffer from carbocation rearrangements because acylium ion is resonance-stabilized.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chemical Reactions Section -->
+    <section class="section" id="reactions">
+        <h2 class="section-title">Chemical Reactions — Bond by Bond</h2>
+        <p class="section-subtitle">Every bond that breaks and forms, visualized so you can remember and
+            recall</p>
+
+        <!-- Legend -->
+        <div class="bond-legend" style="max-width:600px; margin: 0 auto 2rem;">
+            <div class="bond-legend-item"><span class="legend-swatch legend-break"></span> Bond Breaking
+            </div>
+            <div class="bond-legend-item"><span class="legend-swatch legend-form"></span> Bond Forming
+            </div>
+            <div class="bond-legend-item"><span class="legend-swatch legend-flow"></span> Electron Flow
+            </div>
+        </div>
+
+        <!-- Nucleophilic Addition -->
+        <div class="card" style="margin-bottom: 2rem;">
+            <h3><i class="fas fa-plus-circle" style="color: var(--primary);"></i> Nucleophilic Addition
+                Reactions</h3>
+            <p>The most characteristic reaction of carbonyl compounds. The polar C=O makes the carbon
+                electrophilic — nucleophiles attack it.</p>
+
+            <div class="mechanism-box">
+                <h4><i class="fas fa-cogs"></i> General Mechanism — Bond by Bond</h4>
+                <div class="mechanism-steps">
+                    <div class="step">
+                        <span class="step-number">1</span>
+                        <div class="step-content">
+                            <h5>Nucleophilic Attack on δ⁺ Carbon</h5>
+                            <p>Nu⁻ donates its lone pair to the electrophilic C of C=O</p>
+                            <div class="bond-diagram">
+                                <div class="bond-diagram-title">🔬 What happens to bonds:</div>
+                                <div class="bond-row">
+                                    <span class="atom atom-group">Nu⁻</span>
+                                    <span class="e-flow">⟶</span>
+                                    <span class="atom atom-c">C<span class="charge charge-partial-pos">δ⁺</span></span>
+                                    <span class="bond bond-double bond-break">=</span>
+                                    <span class="atom atom-o">O<span class="charge charge-partial-neg">δ⁻</span></span>
+                                </div>
+                                <div class="stage-arrow">⟱</div>
+                                <div class="bond-row">
+                                    <span class="atom atom-group">Nu</span>
+                                    <span class="bond bond-single bond-form">—</span>
+                                    <span class="atom atom-c">C</span>
+                                    <span class="bond bond-single">—</span>
+                                    <span class="atom atom-o">O<span class="charge charge-neg">⁻</span></span>
+                                </div>
+                            </div>
+                            <div class="bond-summary">
+                                <h5>🧠 Remember:</h5>
+                                <ul>
+                                    <li class="breaks">C=O <strong>π bond breaks</strong> (double →
+                                        single)</li>
+                                    <li class="forms">Nu—C <strong>σ bond forms</strong> (new bond!)
+                                    </li>
+                                    <li class="moves">π electrons shift to O → O becomes O⁻</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        <div class="step-content">
+                            <h5>Protonation of Alkoxide</h5>
+                            <p>The O⁻ (alkoxide) picks up H⁺ from solvent</p>
+                            <div class="bond-diagram">
+                                <div class="bond-diagram-title">🔬 What happens to bonds:</div>
+                                <div class="bond-row">
+                                    <span class="atom atom-group">Nu</span>
+                                    <span class="bond bond-single">—</span>
+                                    <span class="atom atom-c">C</span>
+                                    <span class="bond bond-single">—</span>
+                                    <span class="atom atom-o">O<span class="charge charge-neg">⁻</span></span>
+                                    <span class="e-flow">⟵</span>
+                                    <span class="atom atom-h">H⁺</span>
+                                </div>
+                                <div class="stage-arrow">⟱</div>
+                                <div class="bond-row">
+                                    <span class="atom atom-group">Nu</span>
+                                    <span class="bond bond-single">—</span>
+                                    <span class="atom atom-c">C</span>
+                                    <span class="bond bond-single">—</span>
+                                    <span class="atom atom-o">O</span>
+                                    <span class="bond bond-single bond-form">—</span>
+                                    <span class="atom atom-h">H</span>
+                                </div>
+                            </div>
+                            <div class="bond-summary">
+                                <h5>🧠 Remember:</h5>
+                                <ul>
+                                    <li class="forms">O—H <strong>bond forms</strong> (lone pair on O⁻
+                                        grabs H⁺)</li>
+                                    <li class="moves">Carbon went from sp² → sp³ (flat → tetrahedral)
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="highlight-box info">
+                <strong>Reactivity Order:</strong> HCHO > CH₃CHO > C₂H₅CHO > Ketones<br>
+                <em>More alkyl groups = more steric crowding + more electron donation to C → less
+                    electrophilic</em>
+            </div>
+
+            <!-- Specific Nucleophilic Additions -->
+            <h4 style="margin-top: 1.5rem; color: var(--primary);">Specific Nucleophilic Additions:</h4>
+
+            <!-- HCN Addition -->
+            <div class="mechanism-box">
+                <h4><i class="fas fa-flask"></i> Addition of HCN → Cyanohydrin</h4>
+                <div class="equation">
+                    <span class="reactants">R₂C=O + HCN</span>
+                    <span class="arrow">→</span>
+                    <span class="products">R₂C(OH)(CN)</span>
+                    <span class="conditions">NaCN catalyst</span>
+                </div>
+                <div class="bond-diagram">
+                    <div class="bond-diagram-title">🔬 Bond changes:</div>
+                    <div class="bond-row">
+                        <span class="atom atom-n">CN⁻</span>
+                        <span class="e-flow">⟶</span>
+                        <span class="atom atom-c">C</span>
+                        <span class="bond bond-double bond-break">═</span>
+                        <span class="atom atom-o">O</span>
+                    </div>
+                    <div class="stage-arrow">⟱</div>
+                    <div class="bond-row">
+                        <span class="atom atom-n">NC</span>
+                        <span class="bond bond-single bond-form">—</span>
+                        <span class="atom atom-c">C</span>
+                        <span class="bond bond-single">—</span>
+                        <span class="atom atom-o">OH</span>
+                    </div>
+                </div>
+                <div class="bond-summary">
+                    <ul>
+                        <li class="breaks">C═O π bond breaks</li>
+                        <li class="forms">C—CN bond forms (new C—C!)</li>
+                        <li class="forms">O—H bond forms (protonation)</li>
+                        <li class="moves">Product = cyanohydrin (useful for making α-hydroxy acids)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- NaHSO₃ Addition -->
+            <div class="mechanism-box">
+                <h4><i class="fas fa-flask"></i> Addition of NaHSO₃ → Bisulfite Adduct</h4>
+                <div class="equation">
+                    <span class="reactants">R-CHO + NaHSO₃</span>
+                    <span class="arrow">→</span>
+                    <span class="products">R-CH(OH)(SO₃Na)</span>
+                </div>
+                <div class="bond-diagram">
+                    <div class="bond-diagram-title">🔬 Bond changes:</div>
+                    <div class="bond-row">
+                        <span class="atom atom-group">HSO₃⁻</span>
+                        <span class="e-flow">⟶</span>
+                        <span class="atom atom-c">C</span>
+                        <span class="bond bond-double bond-break">═</span>
+                        <span class="atom atom-o">O</span>
+                    </div>
+                    <div class="stage-arrow">⟱</div>
+                    <div class="bond-row">
+                        <span class="atom atom-group">SO₃Na</span>
+                        <span class="bond bond-single bond-form">—</span>
+                        <span class="atom atom-c">C</span>
+                        <span class="bond bond-single">—</span>
+                        <span class="atom atom-o">OH</span>
+                    </div>
+                </div>
+                <div class="bond-summary">
+                    <ul>
+                        <li class="breaks">C═O π bond breaks</li>
+                        <li class="forms">C—S bond forms</li>
+                        <li class="moves">White crystalline ppt — used for purification!</li>
+                        <li class="moves">Only aldehydes + methyl ketones + cyclic ketones react</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Grignard Addition -->
+            <div class="mechanism-box">
+                <h4><i class="fas fa-flask"></i> Addition of Grignard Reagent (RMgBr) → Alcohol</h4>
+                <div class="equation">
+                    <span class="reactants">R'₂C=O + RMgBr</span>
+                    <span class="arrow">→</span>
+                    <span class="products">R'₂C(OH)R</span>
+                    <span class="conditions">1. dry ether 2. H₃O⁺</span>
+                </div>
+                <div class="bond-diagram">
+                    <div class="bond-diagram-title">🔬 Bond changes:</div>
+                    <div class="bond-row">
+                        <span class="atom atom-c">R</span>
+                        <span class="bond bond-single bond-break">—</span>
+                        <span class="atom atom-group">MgBr</span>
+                        &nbsp;&nbsp;
+                        <span class="atom atom-c">C</span>
+                        <span class="bond bond-double bond-break">═</span>
+                        <span class="atom atom-o">O</span>
+                    </div>
+                    <div class="stage-arrow">⟱</div>
+                    <div class="bond-row">
+                        <span class="atom atom-c">R</span>
+                        <span class="bond bond-single bond-form">—</span>
+                        <span class="atom atom-c">C</span>
+                        <span class="bond bond-single">—</span>
+                        <span class="atom atom-o">OH</span>
+                        &nbsp;(after H₃O⁺)
+                    </div>
+                </div>
+                <div class="bond-summary">
+                    <ul>
+                        <li class="breaks">C—Mg bond breaks (carbanion R⁻ released)</li>
+                        <li class="breaks">C═O π bond breaks</li>
+                        <li class="forms">New C—C bond forms (R joins carbonyl C)</li>
+                        <li class="forms">O—H bond forms (acid workup)</li>
+                        <li class="moves">HCHO → 1° alcohol, RCHO → 2° alcohol, R₂CO → 3° alcohol</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 2,4-DNP -->
+            <div class="mechanism-box">
+                <h4><i class="fas fa-flask"></i> Addition of 2,4-DNP → Hydrazone (Test for C═O)</h4>
+                <div class="equation">
+                    <span class="reactants">R₂C=O + 2,4-DNP-NH-NH₂</span>
+                    <span class="arrow">→</span>
+                    <span class="products">R₂C=N-NH-DNP + H₂O</span>
+                </div>
+                <div class="bond-diagram">
+                    <div class="bond-diagram-title">🔬 Bond changes (condensation):</div>
+                    <div class="bond-row">
+                        <span class="atom atom-c">C</span>
+                        <span class="bond bond-double bond-break">═</span>
+                        <span class="atom atom-o">O</span>
+                        &nbsp;+&nbsp;
+                        <span class="atom atom-h">H₂N</span>
+                        <span class="bond bond-single">—</span>
+                        <span class="atom atom-n">NH-DNP</span>
+                    </div>
+                    <div class="stage-arrow">⟱ —H₂O (condensation)</div>
+                    <div class="bond-row">
+                        <span class="atom atom-c">C</span>
+                        <span class="bond bond-double bond-form">═</span>
+                        <span class="atom atom-n">N—NH-DNP</span>
+                        &nbsp;+&nbsp;
+                        <span class="atom atom-h">H₂O</span>
+                    </div>
+                </div>
+                <div class="bond-summary">
+                    <ul>
+                        <li class="breaks">C═O bond breaks completely</li>
+                        <li class="breaks">N—H bonds break (lose H₂O)</li>
+                        <li class="forms">C═N bond forms (imine/hydrazone)</li>
+                        <li class="moves">Yellow/orange ppt = POSITIVE test for aldehydes & ketones!
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Schiff Base -->
+            <div class="mechanism-box">
+                <h4><i class="fas fa-flask"></i> Addition of 1° Amine → Schiff Base (Imine)</h4>
+                <div class="equation">
+                    <span class="reactants">R₂C=O + R'-NH₂</span>
+                    <span class="arrow">→</span>
+                    <span class="products">R₂C=N-R' + H₂O</span>
+                </div>
+                <div class="bond-diagram">
+                    <div class="bond-diagram-title">🔬 Bond changes:</div>
+                    <div class="bond-row">
+                        <span class="atom atom-c">C</span>
+                        <span class="bond bond-double bond-break">═</span>
+                        <span class="atom atom-o">O</span>
+                        &nbsp;+&nbsp;
+                        <span class="atom atom-h">H₂</span>
+                        <span class="atom atom-n">N</span>
+                        <span class="bond bond-single">—</span>
+                        <span class="atom atom-c">R'</span>
+                    </div>
+                    <div class="stage-arrow">⟱ —H₂O</div>
+                    <div class="bond-row">
+                        <span class="atom atom-c">C</span>
+                        <span class="bond bond-double bond-form">═</span>
+                        <span class="atom atom-n">N</span>
+                        <span class="bond bond-single">—</span>
+                        <span class="atom atom-c">R'</span>
+                        &nbsp;+&nbsp;
+                        <span class="atom atom-h">H₂O</span>
+                    </div>
+                </div>
+                <div class="bond-summary">
+                    <ul>
+                        <li class="breaks">C═O breaks, N—H bonds break</li>
+                        <li class="forms">C═N double bond forms (Schiff base)</li>
+                        <li class="moves">Same pattern for: hydroxylamine (→ oxime), phenylhydrazine (→
+                            phenylhydrazone), semicarbazide (→ semicarbazone)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reduction & Oxidation Cards -->
+        <h3 style="color: var(--secondary); margin: 2rem 0 1.5rem;"><i class="fas fa-arrow-down"></i>
+            Reduction Reactions</h3>
+
+        <div class="card-grid">
+            <div class="card">
+                <h4 style="color: var(--primary);">Reduction to Alcohols (NaBH₄ / LiAlH₄)</h4>
+                <div class="equation">
+                    <span class="reactants">R-CHO</span>
+                    <span class="arrow">→</span>
+                    <span class="products">R-CH₂OH</span>
+                    <span class="conditions">NaBH₄ or LiAlH₄</span>
+                </div>
+                <div class="bond-diagram">
+                    <div class="bond-diagram-title">🔬 Bond changes:</div>
+                    <div class="bond-row">
+                        <span class="atom atom-c">C</span>
+                        <span class="bond bond-double bond-break">=</span>
+                        <span class="atom atom-o">O</span>
+                        &nbsp;+ &nbsp;
+                        <span class="atom atom-h">[H⁻]</span>
+                    </div>
+                    <div class="stage-arrow">⟱</div>
+                    <div class="bond-row">
+                        <span class="atom atom-h">H</span>
+                        <span class="bond bond-single bond-form">—</span>
+                        <span class="atom atom-c">C</span>
+                        <span class="bond bond-single">—</span>
+                        <span class="atom atom-o">O</span>
+                        <span class="bond bond-single bond-form">—</span>
+                        <span class="atom atom-h">H</span>
+                    </div>
+                </div>
+                <div class="bond-summary">
+                    <ul>
+                        <li class="breaks">C=O <strong>π bond breaks</strong></li>
+                        <li class="forms">C—H bond forms (hydride adds to C)</li>
+                        <li class="forms">O—H bond forms (protonation)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <h4 style="color: var(--accent);">Clemmensen Reduction</h4>
+                <div class="equation">
+                    <span class="reactants">R-CO-R'</span>
+                    <span class="arrow">→</span>
+                    <span class="products">R-CH₂-R'</span>
+                    <span class="conditions">Zn-Hg / Conc. HCl</span>
+                </div>
+                <div class="bond-diagram">
+                    <div class="bond-diagram-title">🔬 Bond changes:</div>
+                    <div class="bond-row">
+                        <span class="atom atom-c">R</span>
+                        <span class="bond bond-single">—</span>
+                        <span class="atom atom-c">C</span>
+                        <span class="bond bond-double bond-break">=</span>
+                        <span class="atom atom-o">O</span>
+                    </div>
+                    <div class="stage-arrow">⟱</div>
+                    <div class="bond-row">
+                        <span class="atom atom-c">R</span>
+                        <span class="bond bond-single">—</span>
+                        <span class="atom atom-c">C</span>
+                        <span class="bond bond-single bond-form">—</span>
+                        <span class="atom atom-h">H₂</span>
+                    </div>
+                </div>
+                <div class="bond-summary">
+                    <ul>
+                        <li class="breaks"><strong>Both</strong> C=O bonds break (σ + π)</li>
+                        <li class="forms">Two C—H bonds form (complete removal of O)</li>
+                        <li class="moves">Use in <strong>acidic</strong> conditions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <h4 style="color: var(--success);">Wolff-Kishner Reduction</h4>
+                <div class="equation">
+                    <span class="reactants">R-CO-R'</span>
+                    <span class="arrow">→</span>
+                    <span class="products">R-CH₂-R'</span>
+                    <span class="conditions">NH₂NH₂, KOH, Δ</span>
+                </div>
+                <div class="bond-diagram">
+                    <div class="bond-diagram-title">🔬 Bond changes (via hydrazone):</div>
+                    <div class="bond-row">
+                        <span class="atom atom-c">C</span>
+                        <span class="bond bond-double bond-break">=</span>
+                        <span class="atom atom-o">O</span>
+                        &nbsp;→&nbsp;
+                        <span class="atom atom-c">C</span>
+                        <span class="bond bond-double">═</span>
+                        <span class="atom atom-n">N-NH₂</span>
+                        &nbsp;→&nbsp;
+                        <span class="atom atom-c">C</span>
+                        <span class="bond bond-single bond-form">—</span>
+                        <span class="atom atom-h">H₂</span>
+                    </div>
+                </div>
+                <div class="bond-summary">
+                    <ul>
+                        <li class="breaks">C=O breaks → replaced by C=N (hydrazone)</li>
+                        <li class="breaks">Then C=N + N—N all break</li>
+                        <li class="forms">Two C—H bonds form, N₂ gas leaves</li>
+                        <li class="moves">Use in <strong>basic</strong> conditions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Oxidation -->
+        <h3 style="color: var(--danger); margin: 2rem 0 1.5rem;"><i class="fas fa-arrow-up"></i>
+            Oxidation Reactions</h3>
+
+        <div class="card-grid">
+            <div class="card" style="border-left: 4px solid var(--success);">
+                <h4 style="color: var(--success);"><i class="fas fa-flask"></i> Tollens' Test (Silver
+                    Mirror)</h4>
+                <div class="equation">
+                    <span class="reactants">R-CHO + 2[Ag(NH₃)₂]⁺ + 2OH⁻</span>
+                    <span class="arrow">→</span>
+                    <span class="products">RCOO⁻ + 2Ag↓ + 4NH₃ + H₂O</span>
+                </div>
+                <div class="bond-diagram">
+                    <div class="bond-diagram-title">🔬 Bond changes:</div>
+                    <div class="bond-row">
+                        <span class="atom atom-c">R</span>
+                        <span class="bond bond-single">—</span>
+                        <span class="atom atom-c">C</span>
+                        <span class="bond bond-single bond-break">—</span>
+                        <span class="atom atom-h">H</span>
+                        &nbsp;&nbsp;
+                        <span class="atom atom-c">C</span>
+                        <span class="bond bond-double">═</span>
+                        <span class="atom atom-o">O</span>
+                    </div>
+                    <div class="stage-arrow">⟱ Ag⁺ gets reduced to Ag⁰</div>
+                    <div class="bond-row">
+                        <span class="atom atom-c">R</span>
+                        <span class="bond bond-single">—</span>
+                        <span class="atom atom-c">C</span>
+                        <span class="bond bond-double bond-form">═</span>
+                        <span class="atom atom-o">O</span>
+                        &nbsp;&nbsp;(now RCOO⁻)
+                    </div>
+                </div>
+                <div class="bond-summary">
+                    <ul>
+                        <li class="breaks">C—H bond breaks (H leaves as hydride)</li>
+                        <li class="forms">C—O becomes C═O (aldehyde → acid)</li>
+                        <li class="forms">Ag⁺ + e⁻ → Ag⁰ (silver mirror!)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card" style="border-left: 4px solid var(--danger);">
+                <h4 style="color: var(--danger);"><i class="fas fa-flask"></i> Fehling's Test</h4>
+                <div class="equation">
+                    <span class="reactants">R-CHO + 2Cu²⁺ (blue)</span>
+                    <span class="arrow">→</span>
+                    <span class="products">RCOO⁻ + Cu₂O↓ (red)</span>
+                </div>
+                <div class="bond-summary">
+                    <ul>
+                        <li class="breaks">Same as Tollens': C—H breaks, C═O forms</li>
+                        <li class="forms">Cu²⁺ → Cu⁺ → Cu₂O (red ppt)</li>
+                        <li class="moves">Aromatic aldehydes DON'T reduce Fehling's</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card" style="border-left: 4px solid var(--accent);">
+                <h4 style="color: var(--accent);"><i class="fas fa-flask"></i> Iodoform Test</h4>
+                <div class="equation">
+                    <span class="reactants">CH₃-CO-R + 3I₂ + 4NaOH</span>
+                    <span class="arrow">→</span>
+                    <span class="products">RCOONa + CHI₃↓ + 3NaI</span>
+                </div>
+                <div class="bond-diagram">
+                    <div class="bond-diagram-title">🔬 Bond changes (3 steps):</div>
+                    <div class="bond-row">
+                        <span class="atom atom-h">H₃</span>
+                        <span class="atom atom-c">C</span>
+                        <span class="bond bond-single">—</span>
+                        <span class="atom atom-c">CO</span>
+                        <span class="bond bond-single">—</span>
+                        <span class="atom atom-c">R</span>
+                    </div>
+                    <div class="stage-arrow">⟱ 3× replace C—H with C—I</div>
+                    <div class="bond-row">
+                        <span class="atom atom-halogen">I₃</span>
+                        <span class="atom atom-c">C</span>
+                        <span class="bond bond-single bond-break">—</span>
+                        <span class="atom atom-c">CO</span>
+                        <span class="bond bond-single">—</span>
+                        <span class="atom atom-c">R</span>
+                    </div>
+                    <div class="stage-arrow">⟱ C—CI₃ bond breaks</div>
+                    <div class="bond-row">
+                        <span class="atom atom-accent">CHI₃↓</span>
+                        &nbsp;+&nbsp;
+                        <span class="atom atom-c">RCOONa</span>
+                    </div>
+                </div>
+                <div class="bond-summary">
+                    <ul>
+                        <li class="breaks">3 C—H bonds break (α-carbon)</li>
+                        <li class="forms">3 C—I bonds form (halogenation)</li>
+                        <li class="breaks">C—CI₃ bond breaks (cleavage)</li>
+                        <li class="moves">Works for: CH₃CHO, CH₃COR, CH₃CHOH-R</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Name Reactions -->
+        <h3 style="color: var(--primary); margin: 2rem 0 1.5rem;"><i class="fas fa-star"></i> Important
+            Name
+            Reactions
+        </h3>
+
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <h4><i class="fas fa-star" style="color: var(--accent);"></i> Aldol Condensation
+                    </h4>
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Aldehydes/ketones with α-hydrogen undergo self-addition in dilute base.</p>
+                    <div class="equation">
+                        <span class="reactants">2 CH₃CHO</span>
+                        <span class="arrow">→</span>
+                        <span class="products">CH₃CH(OH)CH₂CHO</span>
+                        <span class="arrow">→</span>
+                        <span class="products">CH₃CH=CHCHO</span>
+                        <span class="conditions">Dil. NaOH → heat (-H₂O)</span>
+                    </div>
+
+                    <div class="mechanism-box">
+                        <h4><i class="fas fa-cogs"></i> Mechanism — Bond by Bond</h4>
+                        <div class="mechanism-steps">
+                            <div class="step">
+                                <span class="step-number">1</span>
+                                <div class="step-content">
+                                    <h5>Enolate Formation (α-H Abstraction)</h5>
+                                    <div class="bond-diagram">
+                                        <div class="bond-row">
+                                            <span class="atom atom-o">OH⁻</span>
+                                            <span class="e-flow">⟶</span>
+                                            <span class="atom atom-h">H</span>
+                                            <span class="bond bond-single bond-break">—</span>
+                                            <span class="atom atom-c">CH₂</span>
+                                            <span class="bond bond-single">—</span>
+                                            <span class="atom atom-c">C</span>
+                                            <span class="bond bond-double">═</span>
+                                            <span class="atom atom-o">O</span>
+                                        </div>
+                                    </div>
+                                    <div class="bond-summary">
+                                        <ul>
+                                            <li class="breaks">α C—H bond breaks (base grabs H)</li>
+                                            <li class="forms">O—H bond forms in water</li>
+                                            <li class="moves">Electrons from C—H delocalize → enolate
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">2</span>
+                                <div class="step-content">
+                                    <h5>Nucleophilic Attack (C—C Bond Formation!)</h5>
+                                    <div class="bond-diagram">
+                                        <div class="bond-row">
+                                            <span class="atom atom-c">CH₂⁻</span>
+                                            <span class="e-flow">⟶</span>
+                                            <span class="atom atom-c">C<span
+                                                    class="charge charge-partial-pos">δ⁺</span></span>
+                                            <span class="bond bond-double bond-break">=</span>
+                                            <span class="atom atom-o">O</span>
+                                            &nbsp;(2nd molecule)
+                                        </div>
+                                        <div class="stage-arrow">⟱</div>
+                                        <div class="bond-row">
+                                            <span class="atom atom-c">CH₂</span>
+                                            <span class="bond bond-single bond-form">—</span>
+                                            <span class="atom atom-c">C</span>
+                                            <span class="bond bond-single">—</span>
+                                            <span class="atom atom-o">O⁻</span>
+                                        </div>
+                                    </div>
+                                    <div class="bond-summary">
+                                        <ul>
+                                            <li class="forms"><strong>New C—C bond forms!</strong> (key
+                                                bond)</li>
+                                            <li class="breaks">C=O π bond breaks in 2nd molecule</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">3</span>
+                                <div class="step-content">
+                                    <h5>Protonation → Aldol Product</h5>
+                                    <p>O⁻ picks up H⁺ → β-hydroxy aldehyde (the "Aldol")</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">4</span>
+                                <div class="step-content">
+                                    <h5>Dehydration (on heating)</h5>
+                                    <div class="bond-diagram">
+                                        <div class="bond-row">
+                                            <span class="atom atom-h">H</span>
+                                            <span class="bond bond-single bond-break">—</span>
+                                            <span class="atom atom-c">C</span>
+                                            <span class="bond bond-single">—</span>
+                                            <span class="atom atom-c">C</span>
+                                            <span class="bond bond-single bond-break">—</span>
+                                            <span class="atom atom-o">OH</span>
+                                        </div>
+                                        <div class="stage-arrow">⟱ lose H₂O</div>
+                                        <div class="bond-row">
+                                            <span class="atom atom-c">C</span>
+                                            <span class="bond bond-double bond-form">═</span>
+                                            <span class="atom atom-c">C</span>
+                                            &nbsp;(α,β-unsaturated carbonyl)
+                                        </div>
+                                    </div>
+                                    <div class="bond-summary">
+                                        <ul>
+                                            <li class="breaks">C—OH bond breaks + C—H bond breaks</li>
+                                            <li class="forms">C═C double bond forms</li>
+                                            <li class="moves">H₂O leaves as by-product</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <h4><i class="fas fa-star" style="color: var(--primary);"></i> Cannizzaro Reaction
+                    </h4>
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Aldehydes <strong>without α-hydrogen</strong> undergo disproportionation in conc.
+                        alkali.</p>
+                    <div class="equation">
+                        <span class="reactants">2 C₆H₅CHO</span>
+                        <span class="arrow">→</span>
+                        <span class="products">C₆H₅COONa + C₆H₅CH₂OH</span>
+                        <span class="conditions">Conc. NaOH</span>
+                    </div>
+                    <div class="bond-diagram">
+                        <div class="bond-diagram-title">🔬 Bond changes (disproportionation):</div>
+                        <p
+                            style="color:var(--text-secondary); font-family:'Poppins'; font-size:0.9rem; margin-bottom:0.5rem;">
+                            <strong style="color:var(--danger);">Molecule 1 (gets OXIDIZED):</strong>
+                        </p>
+                        <div class="bond-row">
+                            <span class="atom atom-c">C₆H₅</span>
+                            <span class="bond bond-single">—</span>
+                            <span class="atom atom-c">C</span>
+                            <span class="bond bond-single bond-break">—</span>
+                            <span class="atom atom-h">H</span>
+                            &nbsp;→&nbsp;
+                            <span class="atom atom-c">C₆H₅</span>
+                            <span class="bond bond-single">—</span>
+                            <span class="atom atom-c">C</span>
+                            <span class="bond bond-double bond-form">═</span>
+                            <span class="atom atom-o">O</span>
+                            &nbsp;(→ COO⁻)
+                        </div>
+                        <p
+                            style="color:var(--text-secondary); font-family:'Poppins'; font-size:0.9rem; margin:0.5rem 0;">
+                            <strong style="color:var(--success);">Molecule 2 (gets REDUCED):</strong>
+                        </p>
+                        <div class="bond-row">
+                            <span class="atom atom-c">C₆H₅</span>
+                            <span class="bond bond-single">—</span>
+                            <span class="atom atom-c">C</span>
+                            <span class="bond bond-double bond-break">=</span>
+                            <span class="atom atom-o">O</span>
+                            &nbsp;→&nbsp;
+                            <span class="atom atom-c">C₆H₅</span>
+                            <span class="bond bond-single">—</span>
+                            <span class="atom atom-c">CH₂</span>
+                            <span class="bond bond-single bond-form">—</span>
+                            <span class="atom atom-o">OH</span>
+                        </div>
+                    </div>
+                    <div class="bond-summary">
+                        <h5>🧠 Remember:</h5>
+                        <ul>
+                            <li class="breaks">Mol 1: C—H breaks → gets oxidized to acid</li>
+                            <li class="forms">Mol 2: C=O π breaks, C—H + O—H form → reduced to alcohol
+                            </li>
+                            <li class="moves">One gives H⁻ to the other! (self redox)</li>
+                        </ul>
+                    </div>
+                    <div class="highlight-box">
+                        <strong>Examples without α-H:</strong> HCHO, (CH₃)₃C-CHO, C₆H₅CHO
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carboxylic Acids Section -->
+    <section class="section" id="carboxylic">
+        <h2 class="section-title">Carboxylic Acids</h2>
+        <p class="section-subtitle">Organic acids containing the -COOH functional group</p>
+
+        <div class="card" style="margin-bottom: 2rem;">
+            <h3><i class="fas fa-atom" style="color: var(--accent);"></i> Acidity of Carboxylic Acids
+            </h3>
+            <div class="equation">
+                <span class="reactants">R-COOH</span>
+                <span class="arrow">⇌</span>
+                <span class="products">R-COO⁻ + H⁺</span>
+            </div>
+
+            <div class="highlight-box info">
+                <strong>Acidity Order:</strong> Carboxylic acids (pKₐ ~4-5) > Phenols (~10) > Alcohols
+                (~16)<br>
+                <strong>Reason:</strong> Carboxylate ion stabilized by equivalent resonance structures
+            </div>
+
+            <h4 style="margin-top: 1.5rem;">Effect of Substituents</h4>
+            <ul style="margin-left: 1.5rem;">
+                <li><strong>EWG (Cl, NO₂, F):</strong> Increase acidity</li>
+                <li><strong>EDG (CH₃, OCH₃):</strong> Decrease acidity</li>
+            </ul>
+            <p><strong>Order:</strong> CF₃COOH > CCl₃COOH > ClCH₂COOH > CH₃COOH</p>
+        </div>
+
+        <!-- Reactions -->
+        <h3 style="color: var(--secondary); margin: 2rem 0 1.5rem;">Important Reactions</h3>
+
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <h4>Fischer Esterification</h4>
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="equation">
+                        <span class="reactants">R-COOH + R'OH</span>
+                        <span class="arrow">⇌</span>
+                        <span class="products">R-COOR' + H₂O</span>
+                        <span class="conditions">H₂SO₄, Δ (reversible!)</span>
+                    </div>
+                    <div class="mechanism-box">
+                        <h4><i class="fas fa-cogs"></i> Mechanism — Bond by Bond</h4>
+                        <div class="mechanism-steps">
+                            <div class="step">
+                                <span class="step-number">1</span>
+                                <div class="step-content">
+                                    <h5>Protonation of C=O</h5>
+                                    <div class="bond-diagram">
+                                        <div class="bond-row">
+                                            <span class="atom atom-c">R—C</span>
+                                            <span class="bond bond-double">═</span>
+                                            <span class="atom atom-o">O</span>
+                                            <span class="e-flow">⟵</span>
+                                            <span class="atom atom-h">H⁺</span>
+                                        </div>
+                                    </div>
+                                    <div class="bond-summary">
+                                        <ul>
+                                            <li class="forms">O—H bond forms (makes C more δ⁺)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">2</span>
+                                <div class="step-content">
+                                    <h5>Nucleophilic Attack by Alcohol</h5>
+                                    <div class="bond-diagram">
+                                        <div class="bond-row">
+                                            <span class="atom atom-o">R'O</span>
+                                            <span class="bond bond-single">—</span>
+                                            <span class="atom atom-h">H</span>
+                                            <span class="e-flow">⟶</span>
+                                            <span class="atom atom-c">C<span class="charge charge-pos">⁺</span></span>
+                                        </div>
+                                        <div class="stage-arrow">⟱</div>
+                                        <div class="bond-row">
+                                            <span class="atom atom-o">R'O</span>
+                                            <span class="bond bond-single bond-form">—</span>
+                                            <span class="atom atom-c">C</span>
+                                            &nbsp;(tetrahedral intermediate)
+                                        </div>
+                                    </div>
+                                    <div class="bond-summary">
+                                        <ul>
+                                            <li class="forms">New C—O bond forms (alcohol → acid)</li>
+                                            <li class="breaks">C=O π bond breaks</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">3</span>
+                                <div class="step-content">
+                                    <h5>Elimination of Water</h5>
+                                    <div class="bond-diagram">
+                                        <div class="bond-row">
+                                            <span class="atom atom-c">C</span>
+                                            <span class="bond bond-single bond-break">—</span>
+                                            <span class="atom atom-o">OH₂</span>
+                                            &nbsp;→&nbsp;
+                                            <span class="atom atom-c">C</span>
+                                            <span class="bond bond-double bond-form">═</span>
+                                            <span class="atom atom-o">O</span>
+                                            &nbsp;+&nbsp;
+                                            <span class="atom atom-h">H₂O</span>
+                                        </div>
+                                    </div>
+                                    <div class="bond-summary">
+                                        <ul>
+                                            <li class="breaks">C—OH₂ bond breaks (water leaves)</li>
+                                            <li class="forms">C=O π bond re-forms →
+                                                <strong>Ester!</strong>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <h4>Hell-Volhard-Zelinsky (HVZ) Reaction</h4>
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <p>α-Halogenation of carboxylic acids</p>
+                    <div class="equation">
+                        <span class="reactants">R-CH₂-COOH + X₂</span>
+                        <span class="arrow">→</span>
+                        <span class="products">R-CHX-COOH + HX</span>
+                        <span class="conditions">Red P (catalyst)</span>
+                    </div>
+                    <div class="bond-diagram">
+                        <div class="bond-diagram-title">🔬 Bond changes at α-carbon:</div>
+                        <div class="bond-row">
+                            <span class="atom atom-c">R—C</span>
+                            <span class="bond bond-single bond-break">—</span>
+                            <span class="atom atom-h">H</span>
+                            &nbsp;&nbsp;+&nbsp;&nbsp;
+                            <span class="atom atom-halogen">X</span>
+                            <span class="bond bond-single bond-break">—</span>
+                            <span class="atom atom-halogen">X</span>
+                        </div>
+                        <div class="stage-arrow">⟱</div>
+                        <div class="bond-row">
+                            <span class="atom atom-c">R—C</span>
+                            <span class="bond bond-single bond-form">—</span>
+                            <span class="atom atom-halogen">X</span>
+                            &nbsp;&nbsp;+&nbsp;&nbsp;
+                            <span class="atom atom-h">HX</span>
+                        </div>
+                    </div>
+                    <div class="bond-summary">
+                        <ul>
+                            <li class="breaks">α C—H bond breaks</li>
+                            <li class="breaks">X—X bond breaks</li>
+                            <li class="forms">C—X bond forms (at α-position only!)</li>
+                            <li class="forms">H—X bond forms</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <h4>Decarboxylation</h4>
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="equation">
+                        <span class="reactants">R-COONa + NaOH/CaO</span>
+                        <span class="arrow">→</span>
+                        <span class="products">R-H + Na₂CO₃</span>
+                        <span class="conditions">Heat (sodalime)</span>
+                    </div>
+                    <div class="bond-diagram">
+                        <div class="bond-diagram-title">🔬 Bond changes:</div>
+                        <div class="bond-row">
+                            <span class="atom atom-c">R</span>
+                            <span class="bond bond-single bond-break">—</span>
+                            <span class="atom atom-c">COO⁻</span>
+                            &nbsp;&nbsp;→&nbsp;&nbsp;
+                            <span class="atom atom-c">R</span>
+                            <span class="bond bond-single bond-form">—</span>
+                            <span class="atom atom-h">H</span>
+                            &nbsp;+&nbsp;
+                            <span class="atom atom-c">CO₂↑</span>
+                        </div>
+                    </div>
+                    <div class="bond-summary">
+                        <ul>
+                            <li class="breaks">R—C bond breaks (loses entire -COOH as CO₂)</li>
+                            <li class="forms">R—H bond forms</li>
+                            <li class="moves">Product has one less carbon than starting acid!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Reference -->
+    <section class="section" id="reference">
+        <h2 class="section-title">Quick Reference Tables</h2>
+
+        <h3>Distinguishing Tests</h3>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Test</th>
+                    <th>Reagent</th>
+                    <th>Aldehydes</th>
+                    <th>Ketones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tollens'</td>
+                    <td>Ammoniacal AgNO₃</td>
+                    <td style="color: var(--success);">Silver mirror ✓</td>
+                    <td style="color: var(--danger);">✗</td>
+                </tr>
+                <tr>
+                    <td>Fehling's</td>
+                    <td>Fehling A + B</td>
+                    <td style="color: var(--success);">Red ppt ✓</td>
+                    <td style="color: var(--danger);">✗</td>
+                </tr>
+                <tr>
+                    <td>2,4-DNP</td>
+                    <td>2,4-Dinitrophenylhydrazine</td>
+                    <td style="color: var(--success);">Yellow ppt ✓</td>
+                    <td style="color: var(--success);">Yellow ppt ✓</td>
+                </tr>
+                <tr>
+                    <td>Iodoform</td>
+                    <td>I₂ + NaOH</td>
+                    <td>Only CH₃CHO</td>
+                    <td>Only methyl ketones</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3 style="margin-top: 2rem;">Name Reactions Summary</h3>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Reaction</th>
+                    <th>Conversion</th>
+                    <th>Reagent</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Rosenmund</td>
+                    <td>Acid chloride → Aldehyde</td>
+                    <td>H₂, Pd-BaSO₄</td>
+                </tr>
+                <tr>
+                    <td>Stephen</td>
+                    <td>Nitrile → Aldehyde</td>
+                    <td>SnCl₂/HCl</td>
+                </tr>
+                <tr>
+                    <td>Etard</td>
+                    <td>Toluene → Benzaldehyde</td>
+                    <td>CrO₂Cl₂</td>
+                </tr>
+                <tr>
+                    <td>Gatterman-Koch</td>
+                    <td>Benzene → Benzaldehyde</td>
+                    <td>CO + HCl + AlCl₃</td>
+                </tr>
+                <tr>
+                    <td>Friedel-Crafts</td>
+                    <td>Benzene → Ketone</td>
+                    <td>RCOCl + AlCl₃</td>
+                </tr>
+                <tr>
+                    <td>Clemmensen</td>
+                    <td>C=O → CH₂</td>
+                    <td>Zn-Hg/HCl</td>
+                </tr>
+                <tr>
+                    <td>Wolff-Kishner</td>
+                    <td>C=O → CH₂</td>
+                    <td>NH₂NH₂/KOH</td>
+                </tr>
+                <tr>
+                    <td>Aldol</td>
+                    <td>2 Carbonyls → β-hydroxy carbonyl</td>
+                    <td>Dil. NaOH</td>
+                </tr>
+                <tr>
+                    <td>Cannizzaro</td>
+                    <td>2 RCHO → RCOO⁻ + RCH₂OH</td>
+                    <td>Conc. NaOH</td>
+                </tr>
+                <tr>
+                    <td>HVZ</td>
+                    <td>RCOOH → α-halo acid</td>
+                    <td>X₂ + Red P</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Quiz -->
+    <section class="section" id="quiz">
+        <h2 class="section-title">Test Your Knowledge</h2>
+        <p class="section-subtitle">Practice questions based on CBSE board exam pattern</p>
+
+        <div class="quiz-container">
+            <div class="quiz-question">
+                <p><strong>Q1.</strong> Which aldehyde undergoes Cannizzaro reaction?</p>
+                <div class="quiz-options">
+                    <label><input type="radio" name="q1" value="a"> (a) Acetaldehyde</label>
+                    <label><input type="radio" name="q1" value="b"> (b) Propanal</label>
+                    <label><input type="radio" name="q1" value="c"> (c) Benzaldehyde</label>
+                    <label><input type="radio" name="q1" value="d"> (d) Butanal</label>
+                </div>
+                <div class="answer" style="display: none; color: var(--success);">
+                    <strong>Answer:</strong> (c)
+                    Benzaldehyde - no α-H
+                </div>
+            </div>
+
+            <div class="quiz-question">
+                <p><strong>Q2.</strong> Which gives positive iodoform test?</p>
+                <div class="quiz-options">
+                    <label><input type="radio" name="q2" value="a"> (a) Pentan-3-one</label>
+                    <label><input type="radio" name="q2" value="b"> (b) Pentan-2-one</label>
+                    <label><input type="radio" name="q2" value="c"> (c) Benzaldehyde</label>
+                    <label><input type="radio" name="q2" value="d"> (d) Benzophenone</label>
+                </div>
+                <div class="answer" style="display: none; color: var(--success);">
+                    <strong>Answer:</strong> (b)
+                    Pentan-2-one (methyl ketone)
+                </div>
+            </div>
+
+            <div class="quiz-question">
+                <p><strong>Q3.</strong> Correct acidity order is:</p>
+                <div class="quiz-options">
+                    <label><input type="radio" name="q3" value="a"> (a) Ethanol > Phenol > Acetic
+                        acid</label>
+                    <label><input type="radio" name="q3" value="b"> (b) Acetic acid > Phenol >
+                        Ethanol</label>
+                    <label><input type="radio" name="q3" value="c"> (c) Phenol > Acetic acid >
+                        Ethanol</label>
+                </div>
+                <div class="answer" style="display: none; color: var(--success);">
+                    <strong>Answer:</strong> (b)
+                    Acetic
+                    acid > Phenol > Ethanol
+                </div>
+            </div>
+
+            <div class="quiz-question">
+                <p><strong>Q4.</strong> Rosenmund reduction uses:</p>
+                <div class="quiz-options">
+                    <label><input type="radio" name="q4" value="a"> (a) LiAlH₄</label>
+                    <label><input type="radio" name="q4" value="b"> (b) NaBH₄</label>
+                    <label><input type="radio" name="q4" value="c"> (c) H₂/Pd-BaSO₄</label>
+                    <label><input type="radio" name="q4" value="d"> (d) Zn-Hg/HCl</label>
+                </div>
+                <div class="answer" style="display: none; color: var(--success);">
+                    <strong>Answer:</strong> (c)
+                    H₂/Pd-BaSO₄ (poisoned catalyst)
+                </div>
+            </div>
+
+            <div class="quiz-question">
+                <p><strong>Q5.</strong> Fehling's test is not given by:</p>
+                <div class="quiz-options">
+                    <label><input type="radio" name="q5" value="a"> (a) Formaldehyde</label>
+                    <label><input type="radio" name="q5" value="b"> (b) Acetaldehyde</label>
+                    <label><input type="radio" name="q5" value="c"> (c) Benzaldehyde</label>
+                    <label><input type="radio" name="q5" value="d"> (d) Propionaldehyde</label>
+                </div>
+                <div class="answer" style="display: none; color: var(--success);">
+                    <strong>Answer:</strong> (c)
+                    Benzaldehyde (aromatic aldehydes don't reduce Fehling's)
+                </div>
+            </div>
+
+            <div class="quiz-question">
+                <p><strong>Q6.</strong> In Nucleophilic Addition, which bond breaks first?</p>
+                <div class="quiz-options">
+                    <label><input type="radio" name="q6" value="a"> (a) C—H σ bond</label>
+                    <label><input type="radio" name="q6" value="b"> (b) C═O σ bond</label>
+                    <label><input type="radio" name="q6" value="c"> (c) C═O π bond</label>
+                    <label><input type="radio" name="q6" value="d"> (d) O—H bond</label>
+                </div>
+                <div class="answer" style="display: none; color: var(--success);">
+                    <strong>Answer:</strong> (c)
+                    The π bond of C═O breaks; electrons shift to O making it O⁻
+                </div>
+            </div>
+
+            <div class="quiz-question">
+                <p><strong>Q7.</strong> What is the product when HCHO reacts with HCN?</p>
+                <div class="quiz-options">
+                    <label><input type="radio" name="q7" value="a"> (a) Glycolonitrile
+                        (cyanohydrin)</label>
+                    <label><input type="radio" name="q7" value="b"> (b) Acetonitrile</label>
+                    <label><input type="radio" name="q7" value="c"> (c) Formamide</label>
+                    <label><input type="radio" name="q7" value="d"> (d) Methanol</label>
+                </div>
+                <div class="answer" style="display: none; color: var(--success);">
+                    <strong>Answer:</strong> (a)
+                    HCHO + HCN → HOCH₂CN (glycolonitrile / formaldehyde cyanohydrin)
+                </div>
+            </div>
+
+            <div class="quiz-question">
+                <p><strong>Q8.</strong> PCC oxidation stops at aldehyde because:</p>
+                <div class="quiz-options">
+                    <label><input type="radio" name="q8" value="a"> (a) It is a strong oxidizing
+                        agent</label>
+                    <label><input type="radio" name="q8" value="b"> (b) It works in anhydrous
+                        (non-aqueous) conditions</label>
+                    <label><input type="radio" name="q8" value="c"> (c) It reduces the aldehyde</label>
+                    <label><input type="radio" name="q8" value="d"> (d) It is acidic in nature</label>
+                </div>
+                <div class="answer" style="display: none; color: var(--success);">
+                    <strong>Answer:</strong> (b)
+                    PCC works in CH₂Cl₂ (anhydrous) — no water means no further oxidation to carboxylic
+                    acid
+                </div>
+            </div>
+
+            <div class="quiz-question">
+                <p><strong>Q9.</strong> In Etard reaction, the oxidizing agent is:</p>
+                <div class="quiz-options">
+                    <label><input type="radio" name="q9" value="a"> (a) KMnO₄</label>
+                    <label><input type="radio" name="q9" value="b"> (b) CrO₃</label>
+                    <label><input type="radio" name="q9" value="c"> (c) CrO₂Cl₂</label>
+                    <label><input type="radio" name="q9" value="d"> (d) K₂Cr₂O₇</label>
+                </div>
+                <div class="answer" style="display: none; color: var(--success);">
+                    <strong>Answer:</strong> (c)
+                    Chromyl chloride (CrO₂Cl₂) — converts toluene → benzaldehyde
+                </div>
+            </div>
+
+            <div class="quiz-question">
+                <p><strong>Q10.</strong> Which bond forms in Grignard reaction with carbonyl?</p>
+                <div class="quiz-options">
+                    <label><input type="radio" name="q10" value="a"> (a) C—O bond</label>
+                    <label><input type="radio" name="q10" value="b"> (b) New C—C bond</label>
+                    <label><input type="radio" name="q10" value="c"> (c) C—Mg bond</label>
+                    <label><input type="radio" name="q10" value="d"> (d) C═N bond</label>
+                </div>
+                <div class="answer" style="display: none; color: var(--success);">
+                    <strong>Answer:</strong> (b)
+                    R from RMgBr forms a new C—C bond with the carbonyl carbon
+                </div>
+            </div>
+
+            <div class="quiz-question">
+                <p><strong>Q11.</strong> Stephen reaction converts:</p>
+                <div class="quiz-options">
+                    <label><input type="radio" name="q11" value="a"> (a) Acid chloride →
+                        Aldehyde</label>
+                    <label><input type="radio" name="q11" value="b"> (b) Nitrile → Aldehyde</label>
+                    <label><input type="radio" name="q11" value="c"> (c) Alcohol → Aldehyde</label>
+                    <label><input type="radio" name="q11" value="d"> (d) Ester → Aldehyde</label>
+                </div>
+                <div class="answer" style="display: none; color: var(--success);">
+                    <strong>Answer:</strong> (b)
+                    R—C≡N → R—CHO via imine intermediate, using SnCl₂/HCl
+                </div>
+            </div>
+
+            <div class="quiz-question">
+                <p><strong>Q12.</strong> Which of these does NOT undergo Aldol condensation?</p>
+                <div class="quiz-options">
+                    <label><input type="radio" name="q12" value="a"> (a) Acetaldehyde</label>
+                    <label><input type="radio" name="q12" value="b"> (b) Propanal</label>
+                    <label><input type="radio" name="q12" value="c"> (c) Benzaldehyde</label>
+                    <label><input type="radio" name="q12" value="d"> (d) Acetone</label>
+                </div>
+                <div class="answer" style="display: none; color: var(--success);">
+                    <strong>Answer:</strong> (c)
+                    Benzaldehyde has no α-hydrogen, so it cannot form an enolate
+                </div>
+            </div>
+
+            <div class="quiz-question">
+                <p><strong>Q13.</strong> In Fischer Esterification, which bond is formed?</p>
+                <div class="quiz-options">
+                    <label><input type="radio" name="q13" value="a"> (a) C═C bond</label>
+                    <label><input type="radio" name="q13" value="b"> (b) New C—O bond (ester
+                        linkage)</label>
+                    <label><input type="radio" name="q13" value="c"> (c) C—N bond</label>
+                    <label><input type="radio" name="q13" value="d"> (d) C—Cl bond</label>
+                </div>
+                <div class="answer" style="display: none; color: var(--success);">
+                    <strong>Answer:</strong> (b)
+                    Alcohol's oxygen attacks carbonyl carbon → new C—O bond forms in the ester
+                </div>
+            </div>
+
+            <div class="quiz-question">
+                <p><strong>Q14.</strong> Wolff-Kishner reduction uses:</p>
+                <div class="quiz-options">
+                    <label><input type="radio" name="q14" value="a"> (a) Zn-Hg/HCl (acidic)</label>
+                    <label><input type="radio" name="q14" value="b"> (b) NH₂NH₂/KOH (basic)</label>
+                    <label><input type="radio" name="q14" value="c"> (c) NaBH₄ (neutral)</label>
+                    <label><input type="radio" name="q14" value="d"> (d) H₂/Pd (catalytic)</label>
+                </div>
+                <div class="answer" style="display: none; color: var(--success);">
+                    <strong>Answer:</strong> (b)
+                    NH₂NH₂ + KOH in basic medium; Clemmensen = Zn-Hg/HCl (acidic)
+                </div>
+            </div>
+
+            <div class="quiz-question">
+                <p><strong>Q15.</strong> 2,4-DNP test is used to detect:</p>
+                <div class="quiz-options">
+                    <label><input type="radio" name="q15" value="a"> (a) Alcohols</label>
+                    <label><input type="radio" name="q15" value="b"> (b) Carboxylic acids</label>
+                    <label><input type="radio" name="q15" value="c"> (c) Carbonyl group (C═O)</label>
+                    <label><input type="radio" name="q15" value="d"> (d) Amines</label>
+                </div>
+                <div class="answer" style="display: none; color: var(--success);">
+                    <strong>Answer:</strong> (c)
+                    2,4-DNP reacts with C═O to form a yellow/orange hydrazone precipitate
+                </div>
+            </div>
+
+            <div class="quiz-question">
+                <p><strong>Q16.</strong> In ozonolysis, which bond is cleaved?</p>
+                <div class="quiz-options">
+                    <label><input type="radio" name="q16" value="a"> (a) C—H bond</label>
+                    <label><input type="radio" name="q16" value="b"> (b) C═C double bond</label>
+                    <label><input type="radio" name="q16" value="c"> (c) C—O bond</label>
+                    <label><input type="radio" name="q16" value="d"> (d) O—H bond</label>
+                </div>
+                <div class="answer" style="display: none; color: var(--success);">
+                    <strong>Answer:</strong> (b)
+                    O₃ cleaves C═C → two C═O (carbonyl compounds)
+                </div>
+            </div>
+
+            <div class="quiz-question">
+                <p><strong>Q17.</strong> Decarboxylation of sodium acetate gives:</p>
+                <div class="quiz-options">
+                    <label><input type="radio" name="q17" value="a"> (a) Methanol</label>
+                    <label><input type="radio" name="q17" value="b"> (b) Ethane</label>
+                    <label><input type="radio" name="q17" value="c"> (c) Methane</label>
+                    <label><input type="radio" name="q17" value="d"> (d) Ethanol</label>
+                </div>
+                <div class="answer" style="display: none; color: var(--success);">
+                    <strong>Answer:</strong> (c)
+                    CH₃COONa + NaOH/CaO → CH₄ + Na₂CO₃ (product has 1 less carbon)
+                </div>
+            </div>
+
+            <div class="quiz-question">
+                <p><strong>Q18.</strong> Which catalyst is used in Friedel-Crafts acylation?</p>
+                <div class="quiz-options">
+                    <label><input type="radio" name="q18" value="a"> (a) Cu/573 K</label>
+                    <label><input type="radio" name="q18" value="b"> (b) Pd-BaSO₄</label>
+                    <label><input type="radio" name="q18" value="c"> (c) Anhydrous AlCl₃</label>
+                    <label><input type="radio" name="q18" value="d"> (d) SnCl₂/HCl</label>
+                </div>
+                <div class="answer" style="display: none; color: var(--success);">
+                    <strong>Answer:</strong> (c)
+                    AlCl₃ is the Lewis acid catalyst — generates acylium ion [R—C≡O]⁺
+                </div>
+            </div>
+
+            <div class="quiz-question">
+                <p><strong>Q19.</strong> HVZ reaction puts halogen at:</p>
+                <div class="quiz-options">
+                    <label><input type="radio" name="q19" value="a"> (a) β-position</label>
+                    <label><input type="radio" name="q19" value="b"> (b) α-position</label>
+                    <label><input type="radio" name="q19" value="c"> (c) γ-position</label>
+                    <label><input type="radio" name="q19" value="d"> (d) Terminal carbon</label>
+                </div>
+                <div class="answer" style="display: none; color: var(--success);">
+                    <strong>Answer:</strong> (b)
+                    Hell-Volhard-Zelinsky: α-C—H breaks, C—X forms at α-position
+                </div>
+            </div>
+
+            <div class="quiz-question">
+                <p><strong>Q20.</strong> Which reaction is an example of disproportionation?</p>
+                <div class="quiz-options">
+                    <label><input type="radio" name="q20" value="a"> (a) Aldol condensation</label>
+                    <label><input type="radio" name="q20" value="b"> (b) Cannizzaro reaction</label>
+                    <label><input type="radio" name="q20" value="c"> (c) Fischer esterification</label>
+                    <label><input type="radio" name="q20" value="d"> (d) Rosenmund reduction</label>
+                </div>
+                <div class="answer" style="display: none; color: var(--success);">
+                    <strong>Answer:</strong> (b)
+                    One molecule gets oxidized (→ COO⁻) and one reduced (→ CH₂OH)
+                </div>
+            </div>
+
+            <button onclick="showAnswers()"
+                style="margin-top: 1.5rem; padding: 1rem 2rem; background: var(--gradient-1); color: white; border: none; border-radius: 10px; cursor: pointer; font-family: inherit; font-size: 1rem;">
+                <i class="fas fa-check"></i> Show All Answers
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+        style="background: var(--bg-card); padding: 3rem 2rem; text-align: center; border-top: 1px solid var(--glass-border);">
+        <h3 style="color: var(--primary); margin-bottom: 1rem;">📚 CBSE Class 12 Chemistry</h3>
+        <p style="color: var(--text-secondary);">Chapter 8: Aldehydes, Ketones and Carboxylic Acids</p>
+        <p style="color: var(--text-secondary); margin-top: 1rem; font-size: 0.9rem;">Based on NCERT
+            Textbook for
+            Class
+            XII</p>
+        <p style="color: var(--text-secondary); margin-top: 0.5rem;">Made with ❤️ for CBSE Students</p>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" onclick="scrollToTop()">↑</button>
+
+    <script>
+        // Tab functionality
+        function openTab(evt, tabName) {
+            document.querySelectorAll('.tab-content').forEach(tc => tc.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(tb => tb.classList.remove('active'));
+            document.getElementById(tabName).classList.add('active');
+            evt.currentTarget.classList.add('active');
+        }
+
+        // Accordion functionality
+        function toggleAccordion(header) {
+            const item = header.parentElement;
+            const wasActive = item.classList.contains('active');
+            item.parentElement.querySelectorAll('.accordion-item').forEach(ai => ai.classList.remove('active'));
+            if (!wasActive) item.classList.add('active');
+        }
+
+        // Mobile navigation
+        function toggleNav() {
+            document.getElementById('navMenu').classList.toggle('active');
+        }
+
+        // Progress bar and scroll to top
+        window.addEventListener('scroll', () => {
+            const scrollTop = document.documentElement.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            document.getElementById('progressBar').style.width = (scrollTop / scrollHeight) * 100 + '%';
+            document.getElementById('scrollTop').classList.toggle('visible', scrollTop > 500);
+        });
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Show quiz answers
+        function showAnswers() {
+            document.querySelectorAll('.answer').forEach(a => a.style.display = 'block');
+        }
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+
+</html>

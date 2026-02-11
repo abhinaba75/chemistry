@@ -1,0 +1,535 @@
+<!-- Chemical Reactions Section - Part 2 -->
+<!-- Include this after preparation section -->
+
+<!-- Chemical Reactions Section -->
+<section class="section" id="reactions">
+    <h2 class="section-title">Chemical Reactions</h2>
+    <p class="section-subtitle">Explore the diverse chemistry of aldehydes and ketones</p>
+
+    <!-- Nucleophilic Addition -->
+    <div class="card" style="margin-bottom: 2rem;">
+        <h3><i class="fas fa-plus-circle" style="color: var(--primary);"></i> Nucleophilic Addition Reactions</h3>
+        <p>The most characteristic reaction of carbonyl compounds. Unlike alkenes (electrophilic addition), carbonyl
+            compounds undergo nucleophilic addition due to polar C=O bond.</p>
+
+        <div class="mechanism-box">
+            <h4><i class="fas fa-cogs"></i> General Mechanism of Nucleophilic Addition</h4>
+            <div class="mechanism-steps">
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <div class="step-content">
+                        <h5>Nucleophilic Attack</h5>
+                        <p>Nucleophile (Nu⁻) attacks the electrophilic carbonyl carbon from above or below the plane</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <div class="step-content">
+                        <h5>Tetrahedral Intermediate</h5>
+                        <p>π-bond breaks, carbon rehybridizes from sp² to sp³, forming alkoxide intermediate</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <div class="step-content">
+                        <h5>Protonation</h5>
+                        <p>Alkoxide captures a proton from the medium to give neutral product</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="highlight-box info">
+            <strong>Reactivity Order:</strong><br>
+            HCHO > CH₃CHO > C₂H₅CHO > Ketones<br>
+            <em>Aldehydes are more reactive than ketones due to steric and electronic factors</em>
+        </div>
+    </div>
+
+    <!-- Reduction & Oxidation Cards -->
+    <h3 style="color: var(--secondary); margin: 2rem 0 1.5rem;"><i class="fas fa-arrow-down"></i> Reduction Reactions
+    </h3>
+
+    <div class="card-grid">
+        <div class="card">
+            <h4 style="color: var(--primary);">Reduction to Alcohols</h4>
+            <div class="equation">
+                <span class="reactants">R-CHO / R-CO-R'</span>
+                <span class="arrow">→</span>
+                <span class="products">R-CH₂OH / R-CHOH-R'</span>
+                <span class="conditions">NaBH₄ or LiAlH₄ or H₂/Ni</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h4 style="color: var(--accent);">Clemmensen Reduction</h4>
+            <div class="equation">
+                <span class="reactants">R-CO-R'</span>
+                <span class="arrow">→</span>
+                <span class="products">R-CH₂-R'</span>
+                <span class="conditions">Zn-Hg / Conc. HCl</span>
+            </div>
+            <p>Acidic conditions - C=O to CH₂</p>
+        </div>
+
+        <div class="card">
+            <h4 style="color: var(--success);">Wolff-Kishner Reduction</h4>
+            <div class="equation">
+                <span class="reactants">R-CO-R'</span>
+                <span class="arrow">→</span>
+                <span class="products">R-CH₂-R'</span>
+                <span class="conditions">NH₂NH₂, KOH, Δ</span>
+            </div>
+            <p>Basic conditions - C=O to CH₂</p>
+        </div>
+    </div>
+
+    <!-- Oxidation -->
+    <h3 style="color: var(--danger); margin: 2rem 0 1.5rem;"><i class="fas fa-arrow-up"></i> Oxidation Reactions</h3>
+
+    <div class="card-grid">
+        <div class="card" style="border-left: 4px solid var(--success);">
+            <h4 style="color: var(--success);"><i class="fas fa-flask"></i> Tollens' Test</h4>
+            <div class="equation">
+                <span class="reactants">R-CHO + 2[Ag(NH₃)₂]⁺</span>
+                <span class="arrow">→</span>
+                <span class="products">RCOO⁻ + 2Ag↓</span>
+            </div>
+            <p><strong>Result:</strong> Silver mirror (aldehydes only)</p>
+        </div>
+
+        <div class="card" style="border-left: 4px solid var(--danger);">
+            <h4 style="color: var(--danger);"><i class="fas fa-flask"></i> Fehling's Test</h4>
+            <div class="equation">
+                <span class="reactants">R-CHO + 2Cu²⁺</span>
+                <span class="arrow">→</span>
+                <span class="products">RCOO⁻ + Cu₂O↓</span>
+            </div>
+            <p><strong>Result:</strong> Red-brown precipitate (aliphatic aldehydes)</p>
+        </div>
+
+        <div class="card" style="border-left: 4px solid var(--accent);">
+            <h4 style="color: var(--accent);"><i class="fas fa-flask"></i> Iodoform Test</h4>
+            <div class="equation">
+                <span class="reactants">CH₃-CO-R + I₂/NaOH</span>
+                <span class="arrow">→</span>
+                <span class="products">RCOONa + CHI₃↓</span>
+            </div>
+            <p><strong>For:</strong> CH₃CHO, methyl ketones, CH₃CHOH-R</p>
+        </div>
+    </div>
+
+    <!-- Name Reactions -->
+    <h3 style="color: var(--primary); margin: 2rem 0 1.5rem;"><i class="fas fa-star"></i> Important Name Reactions</h3>
+
+    <div class="accordion">
+        <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+                <h4><i class="fas fa-star" style="color: var(--accent);"></i> Aldol Condensation</h4>
+                <span class="accordion-icon">+</span>
+            </div>
+            <div class="accordion-content">
+                <p>Aldehydes/ketones with α-hydrogen undergo self-addition in dilute base.</p>
+                <div class="equation">
+                    <span class="reactants">2 CH₃CHO</span>
+                    <span class="arrow">→</span>
+                    <span class="products">CH₃CH(OH)CH₂CHO</span>
+                    <span class="arrow">→</span>
+                    <span class="products">CH₃CH=CHCHO</span>
+                    <span class="conditions">Dil. NaOH → heat (-H₂O)</span>
+                </div>
+
+                <div class="mechanism-box">
+                    <h4><i class="fas fa-cogs"></i> Mechanism</h4>
+                    <div class="mechanism-steps">
+                        <div class="step">
+                            <span class="step-number">1</span>
+                            <div class="step-content">
+                                <h5>Enolate Formation</h5>
+                                <p>Base abstracts α-H → resonance-stabilized enolate ion</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <span class="step-number">2</span>
+                            <div class="step-content">
+                                <h5>Nucleophilic Attack</h5>
+                                <p>Enolate attacks carbonyl carbon of another molecule</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <span class="step-number">3</span>
+                            <div class="step-content">
+                                <h5>Protonation</h5>
+                                <p>Forms β-hydroxy aldehyde (Aldol)</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <span class="step-number">4</span>
+                            <div class="step-content">
+                                <h5>Dehydration</h5>
+                                <p>On heating, loses H₂O → α,β-unsaturated carbonyl</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+                <h4><i class="fas fa-star" style="color: var(--primary);"></i> Cannizzaro Reaction</h4>
+                <span class="accordion-icon">+</span>
+            </div>
+            <div class="accordion-content">
+                <p>Aldehydes <strong>without α-hydrogen</strong> undergo disproportionation in conc. alkali.</p>
+                <div class="equation">
+                    <span class="reactants">2 C₆H₅CHO</span>
+                    <span class="arrow">→</span>
+                    <span class="products">C₆H₅COONa + C₆H₅CH₂OH</span>
+                    <span class="conditions">Conc. NaOH</span>
+                </div>
+                <p>One molecule oxidized to acid, other reduced to alcohol.</p>
+                <div class="highlight-box">
+                    <strong>Examples without α-H:</strong> HCHO, (CH₃)₃C-CHO, C₆H₅CHO
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Carboxylic Acids Section -->
+<section class="section" id="carboxylic">
+    <h2 class="section-title">Carboxylic Acids</h2>
+    <p class="section-subtitle">Organic acids containing the -COOH functional group</p>
+
+    <div class="card" style="margin-bottom: 2rem;">
+        <h3><i class="fas fa-atom" style="color: var(--accent);"></i> Acidity of Carboxylic Acids</h3>
+        <div class="equation">
+            <span class="reactants">R-COOH</span>
+            <span class="arrow">⇌</span>
+            <span class="products">R-COO⁻ + H⁺</span>
+        </div>
+
+        <div class="highlight-box info">
+            <strong>Acidity Order:</strong> Carboxylic acids (pKₐ ~4-5) > Phenols (~10) > Alcohols (~16)<br>
+            <strong>Reason:</strong> Carboxylate ion stabilized by equivalent resonance structures
+        </div>
+
+        <h4 style="margin-top: 1.5rem;">Effect of Substituents</h4>
+        <ul style="margin-left: 1.5rem;">
+            <li><strong>EWG (Cl, NO₂, F):</strong> Increase acidity</li>
+            <li><strong>EDG (CH₃, OCH₃):</strong> Decrease acidity</li>
+        </ul>
+        <p><strong>Order:</strong> CF₃COOH > CCl₃COOH > ClCH₂COOH > CH₃COOH</p>
+    </div>
+
+    <!-- Reactions -->
+    <h3 style="color: var(--secondary); margin: 2rem 0 1.5rem;">Important Reactions</h3>
+
+    <div class="accordion">
+        <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+                <h4>Fischer Esterification</h4>
+                <span class="accordion-icon">+</span>
+            </div>
+            <div class="accordion-content">
+                <div class="equation">
+                    <span class="reactants">R-COOH + R'OH</span>
+                    <span class="arrow">⇌</span>
+                    <span class="products">R-COOR' + H₂O</span>
+                    <span class="conditions">H₂SO₄, Δ</span>
+                </div>
+                <div class="mechanism-box">
+                    <h4>Mechanism</h4>
+                    <div class="mechanism-steps">
+                        <div class="step"><span class="step-number">1</span>
+                            <div class="step-content">
+                                <p>Protonation of C=O oxygen</p>
+                            </div>
+                        </div>
+                        <div class="step"><span class="step-number">2</span>
+                            <div class="step-content">
+                                <p>Nucleophilic attack by alcohol</p>
+                            </div>
+                        </div>
+                        <div class="step"><span class="step-number">3</span>
+                            <div class="step-content">
+                                <p>Proton transfer</p>
+                            </div>
+                        </div>
+                        <div class="step"><span class="step-number">4</span>
+                            <div class="step-content">
+                                <p>Elimination of H₂O</p>
+                            </div>
+                        </div>
+                        <div class="step"><span class="step-number">5</span>
+                            <div class="step-content">
+                                <p>Deprotonation → Ester</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+                <h4>Hell-Volhard-Zelinsky (HVZ) Reaction</h4>
+                <span class="accordion-icon">+</span>
+            </div>
+            <div class="accordion-content">
+                <p>α-Halogenation of carboxylic acids</p>
+                <div class="equation">
+                    <span class="reactants">R-CH₂-COOH + X₂</span>
+                    <span class="arrow">→</span>
+                    <span class="products">R-CHX-COOH + HX</span>
+                    <span class="conditions">Red P</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+                <h4>Decarboxylation</h4>
+                <span class="accordion-icon">+</span>
+            </div>
+            <div class="accordion-content">
+                <div class="equation">
+                    <span class="reactants">R-COONa + NaOH/CaO</span>
+                    <span class="arrow">→</span>
+                    <span class="products">R-H + Na₂CO₃</span>
+                    <span class="conditions">Heat (sodalime)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Quick Reference -->
+<section class="section" id="reference">
+    <h2 class="section-title">Quick Reference</h2>
+
+    <h3>Distinguishing Tests</h3>
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>Test</th>
+                <th>Reagent</th>
+                <th>Aldehydes</th>
+                <th>Ketones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tollens'</td>
+                <td>Ammoniacal AgNO₃</td>
+                <td style="color: var(--success);">Silver mirror ✓</td>
+                <td style="color: var(--danger);">✗</td>
+            </tr>
+            <tr>
+                <td>Fehling's</td>
+                <td>Fehling A + B</td>
+                <td style="color: var(--success);">Red ppt ✓</td>
+                <td style="color: var(--danger);">✗</td>
+            </tr>
+            <tr>
+                <td>2,4-DNP</td>
+                <td>2,4-Dinitrophenylhydrazine</td>
+                <td style="color: var(--success);">Yellow ppt ✓</td>
+                <td style="color: var(--success);">Yellow ppt ✓</td>
+            </tr>
+            <tr>
+                <td>Iodoform</td>
+                <td>I₂ + NaOH</td>
+                <td>Only CH₃CHO</td>
+                <td>Only methyl ketones</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3 style="margin-top: 2rem;">Name Reactions Summary</h3>
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>Reaction</th>
+                <th>Conversion</th>
+                <th>Reagent</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Rosenmund</td>
+                <td>Acid chloride → Aldehyde</td>
+                <td>H₂, Pd-BaSO₄</td>
+            </tr>
+            <tr>
+                <td>Stephen</td>
+                <td>Nitrile → Aldehyde</td>
+                <td>SnCl₂/HCl</td>
+            </tr>
+            <tr>
+                <td>Etard</td>
+                <td>Toluene → Benzaldehyde</td>
+                <td>CrO₂Cl₂</td>
+            </tr>
+            <tr>
+                <td>Gatterman-Koch</td>
+                <td>Benzene → Benzaldehyde</td>
+                <td>CO + HCl + AlCl₃</td>
+            </tr>
+            <tr>
+                <td>Friedel-Crafts</td>
+                <td>Benzene → Ketone</td>
+                <td>RCOCl + AlCl₃</td>
+            </tr>
+            <tr>
+                <td>Clemmensen</td>
+                <td>C=O → CH₂</td>
+                <td>Zn-Hg/HCl</td>
+            </tr>
+            <tr>
+                <td>Wolff-Kishner</td>
+                <td>C=O → CH₂</td>
+                <td>NH₂NH₂/KOH</td>
+            </tr>
+            <tr>
+                <td>Aldol</td>
+                <td>2 Carbonyls → β-hydroxy carbonyl</td>
+                <td>Dil. NaOH</td>
+            </tr>
+            <tr>
+                <td>Cannizzaro</td>
+                <td>2 RCHO → RCOO⁻ + RCH₂OH</td>
+                <td>Conc. NaOH</td>
+            </tr>
+            <tr>
+                <td>HVZ</td>
+                <td>RCOOH → α-halo acid</td>
+                <td>X₂ + Red P</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<!-- Quiz -->
+<section class="section" id="quiz">
+    <h2 class="section-title">Test Your Knowledge</h2>
+
+    <div class="quiz-container">
+        <div class="quiz-question">
+            <p><strong>Q1.</strong> Which aldehyde undergoes Cannizzaro reaction?</p>
+            <div class="quiz-options">
+                <label><input type="radio" name="q1" value="a"> Acetaldehyde</label>
+                <label><input type="radio" name="q1" value="b"> Propanal</label>
+                <label><input type="radio" name="q1" value="c"> Benzaldehyde</label>
+                <label><input type="radio" name="q1" value="d"> Butanal</label>
+            </div>
+            <div class="answer" style="display: none; color: var(--success);"><strong>Answer:</strong> (c) Benzaldehyde
+                - no α-H</div>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>Q2.</strong> Which gives positive iodoform test?</p>
+            <div class="quiz-options">
+                <label><input type="radio" name="q2" value="a"> Pentan-3-one</label>
+                <label><input type="radio" name="q2" value="b"> Pentan-2-one</label>
+                <label><input type="radio" name="q2" value="c"> Benzaldehyde</label>
+                <label><input type="radio" name="q2" value="d"> Benzophenone</label>
+            </div>
+            <div class="answer" style="display: none; color: var(--success);"><strong>Answer:</strong> (b) Pentan-2-one
+                (methyl ketone)</div>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>Q3.</strong> Correct acidity order is:</p>
+            <div class="quiz-options">
+                <label><input type="radio" name="q3" value="a"> Ethanol > Phenol > Acetic acid</label>
+                <label><input type="radio" name="q3" value="b"> Acetic acid > Phenol > Ethanol</label>
+                <label><input type="radio" name="q3" value="c"> Phenol > Acetic acid > Ethanol</label>
+            </div>
+            <div class="answer" style="display: none; color: var(--success);"><strong>Answer:</strong> (b) Acetic acid >
+                Phenol > Ethanol</div>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>Q4.</strong> Rosenmund reduction uses:</p>
+            <div class="quiz-options">
+                <label><input type="radio" name="q4" value="a"> LiAlH₄</label>
+                <label><input type="radio" name="q4" value="b"> NaBH₄</label>
+                <label><input type="radio" name="q4" value="c"> H₂/Pd-BaSO₄</label>
+                <label><input type="radio" name="q4" value="d"> Zn-Hg/HCl</label>
+            </div>
+            <div class="answer" style="display: none; color: var(--success);"><strong>Answer:</strong> (c) H₂/Pd-BaSO₄
+            </div>
+        </div>
+
+        <div class="quiz-question">
+            <p><strong>Q5.</strong> Fehling's test is not given by:</p>
+            <div class="quiz-options">
+                <label><input type="radio" name="q5" value="a"> Formaldehyde</label>
+                <label><input type="radio" name="q5" value="b"> Acetaldehyde</label>
+                <label><input type="radio" name="q5" value="c"> Benzaldehyde</label>
+                <label><input type="radio" name="q5" value="d"> Propionaldehyde</label>
+            </div>
+            <div class="answer" style="display: none; color: var(--success);"><strong>Answer:</strong> (c) Benzaldehyde
+                (aromatic)</div>
+        </div>
+
+        <button onclick="showAnswers()"
+            style="margin-top: 1.5rem; padding: 1rem 2rem; background: var(--gradient-1); color: white; border: none; border-radius: 10px; cursor: pointer;">
+            <i class="fas fa-check"></i> Show Answers
+        </button>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer
+    style="background: var(--bg-card); padding: 3rem 2rem; text-align: center; border-top: 1px solid var(--glass-border);">
+    <h3 style="color: var(--primary); margin-bottom: 1rem;">📚 CBSE Class 12 Chemistry</h3>
+    <p style="color: var(--text-secondary);">Chapter 8: Aldehydes, Ketones and Carboxylic Acids</p>
+    <p style="color: var(--text-secondary); margin-top: 1rem; font-size: 0.9rem;">Based on NCERT Textbook</p>
+</footer>
+
+<button class="scroll-top" id="scrollTop" onclick="scrollToTop()">↑</button>
+
+<script>
+    function openTab(evt, tabName) {
+        document.querySelectorAll('.tab-content').forEach(tc => tc.classList.remove('active'));
+        document.querySelectorAll('.tab-btn').forEach(tb => tb.classList.remove('active'));
+        document.getElementById(tabName).classList.add('active');
+        evt.currentTarget.classList.add('active');
+    }
+
+    function toggleAccordion(header) {
+        const item = header.parentElement;
+        const wasActive = item.classList.contains('active');
+        item.parentElement.querySelectorAll('.accordion-item').forEach(ai => ai.classList.remove('active'));
+        if (!wasActive) item.classList.add('active');
+    }
+
+    function toggleNav() {
+        document.getElementById('navMenu').classList.toggle('active');
+    }
+
+    window.addEventListener('scroll', () => {
+        const scrollTop = document.documentElement.scrollTop;
+        const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        document.getElementById('progressBar').style.width = (scrollTop / scrollHeight) * 100 + '%';
+        document.getElementById('scrollTop').classList.toggle('visible', scrollTop > 500);
+    });
+
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function showAnswers() {
+        document.querySelectorAll('.answer').forEach(a => a.style.display = 'block');
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+</script>

@@ -1,0 +1,884 @@
+/* Chemistry Class 12 - Aldehydes, Ketones & Carboxylic Acids */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Merriweather:wght@400;700&display=swap');
+
+:root {
+  --primary: #6366f1;
+  --primary-dark: #4f46e5;
+  --secondary: #14b8a6;
+  --accent: #f59e0b;
+  --bg-dark: #0f172a;
+  --bg-card: #1e293b;
+  --bg-card-hover: #334155;
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --success: #22c55e;
+  --danger: #ef4444;
+  --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  --glass: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg-dark);
+  color: var(--text-primary);
+  line-height: 1.8;
+  overflow-x: hidden;
+}
+
+/* Animated Background */
+.bg-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+}
+
+.floating-molecules {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.molecule {
+  position: absolute;
+  opacity: 0.1;
+  animation: float 20s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-30px) rotate(180deg); }
+}
+
+/* Header */
+header {
+  background: var(--glass);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--glass-border);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  padding: 1rem 2rem;
+}
+
+.header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: var(--gradient-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primary);
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 6rem 2rem 4rem;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 900px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, #fff 0%, #a5b4fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: fadeInUp 1s ease;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  animation: fadeInUp 1s ease 0.2s both;
+}
+
+.hero-badges {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  animation: fadeInUp 1s ease 0.4s both;
+}
+
+.badge {
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.badge-aldehyde { background: rgba(99, 102, 241, 0.2); border: 1px solid var(--primary); color: #a5b4fc; }
+.badge-ketone { background: rgba(20, 184, 166, 0.2); border: 1px solid var(--secondary); color: #5eead4; }
+.badge-acid { background: rgba(245, 158, 11, 0.2); border: 1px solid var(--accent); color: #fcd34d; }
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Section Styles */
+.section {
+  padding: 5rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  background: var(--gradient-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--text-secondary);
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+}
+
+/* Cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: var(--bg-card);
+  border-radius: 20px;
+  padding: 2rem;
+  border: 1px solid var(--glass-border);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--gradient-1);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary);
+  box-shadow: 0 20px 40px rgba(99, 102, 241, 0.2);
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.card p {
+  color: var(--text-secondary);
+}
+
+/* Reaction Mechanism Box */
+.mechanism-box {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(20, 184, 166, 0.1) 100%);
+  border: 2px solid var(--glass-border);
+  border-radius: 20px;
+  padding: 2rem;
+  margin: 2rem 0;
+  position: relative;
+}
+
+.mechanism-box h4 {
+  color: var(--accent);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mechanism-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.step {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.step-number {
+  background: var(--primary);
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-content h5 {
+  color: var(--secondary);
+  margin-bottom: 0.5rem;
+}
+
+/* Chemical Equation */
+.equation {
+  background: var(--bg-card);
+  border-radius: 15px;
+  padding: 1.5rem 2rem;
+  margin: 1rem 0;
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  border-left: 4px solid var(--primary);
+  overflow-x: auto;
+}
+
+.equation .reactants, .equation .products {
+  color: var(--text-primary);
+}
+
+.equation .arrow {
+  color: var(--accent);
+  margin: 0 1rem;
+  font-size: 1.5rem;
+}
+
+.equation .conditions {
+  color: var(--secondary);
+  font-size: 0.85rem;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+/* Table Styles */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  background: var(--bg-card);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.data-table th {
+  background: var(--primary);
+  color: white;
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+.data-table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.data-table tr:hover {
+  background: var(--bg-card-hover);
+}
+
+/* Accordion */
+.accordion {
+  margin: 2rem 0;
+}
+
+.accordion-item {
+  background: var(--bg-card);
+  border-radius: 15px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  border: 1px solid var(--glass-border);
+}
+
+.accordion-header {
+  padding: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.accordion-header:hover {
+  background: var(--bg-card-hover);
+}
+
+.accordion-header h4 {
+  color: var(--text-primary);
+}
+
+.accordion-icon {
+  color: var(--primary);
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 1.5rem;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 2000px;
+  padding: 0 1.5rem 1.5rem;
+}
+
+.accordion-item.active .accordion-icon {
+  transform: rotate(45deg);
+}
+
+/* Tabs */
+.tabs {
+  margin: 2rem 0;
+}
+
+.tab-buttons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.tab-btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.tab-btn:hover, .tab-btn.active {
+  background: var(--primary);
+  color: white;
+}
+
+.tab-content {
+  display: none;
+  animation: fadeIn 0.3s ease;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Highlight Box */
+.highlight-box {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.15) 0%, rgba(239, 68, 68, 0.15) 100%);
+  border-left: 4px solid var(--accent);
+  padding: 1.5rem;
+  border-radius: 0 15px 15px 0;
+  margin: 1.5rem 0;
+}
+
+.highlight-box.info {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(20, 184, 166, 0.15) 100%);
+  border-left-color: var(--primary);
+}
+
+.highlight-box.success {
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.15) 0%, rgba(20, 184, 166, 0.15) 100%);
+  border-left-color: var(--success);
+}
+
+/* Chemical Structure Display */
+.structure-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.structure-item {
+  background: var(--bg-card);
+  padding: 1.5rem;
+  border-radius: 15px;
+  text-align: center;
+  min-width: 200px;
+  border: 1px solid var(--glass-border);
+}
+
+.structure-item .formula {
+  font-size: 1.5rem;
+  font-family: 'Merriweather', serif;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.structure-item .name {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+/* Progress Indicator */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: var(--gradient-1);
+  z-index: 1001;
+  transition: width 0.1s ease;
+}
+
+/* Mobile Navigation */
+.mobile-nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 { font-size: 2rem; }
+  .section-title { font-size: 1.8rem; }
+  .card-grid { grid-template-columns: 1fr; }
+  
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--bg-card);
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  
+  nav ul.active { display: flex; }
+  .mobile-nav-toggle { display: block; }
+  
+  .header-content {
+    flex-wrap: wrap;
+  }
+}
+
+/* Scroll to top */
+.scroll-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 50px;
+  height: 50px;
+  background: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 20px rgba(99, 102, 241, 0.4);
+}
+
+.scroll-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-top:hover {
+  transform: translateY(-5px);
+}
+
+/* Quiz Section */
+.quiz-container {
+  background: var(--bg-card);
+  border-radius: 20px;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.quiz-question {
+  margin-bottom: 1.5rem;
+}
+
+.quiz-options label {
+  display: block;
+  padding: 1rem;
+  background: var(--bg-card-hover);
+  border-radius: 10px;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.quiz-options label:hover {
+  background: rgba(99, 102, 241, 0.2);
+}
+
+.quiz-options input {
+  margin-right: 1rem;
+}
+
+/* Subscript and Superscript */
+sub, sup {
+  font-size: 0.7em;
+}
+
+/* Arrow styling for reactions */
+.reaction-arrow {
+  display: inline-block;
+  margin: 0 0.5rem;
+  color: var(--accent);
+}
+
+/* ===== BOND VISUALIZATION SYSTEM ===== */
+
+/* Bond Diagram Container */
+.bond-diagram {
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(30, 41, 59, 0.95) 100%);
+  border: 2px solid var(--glass-border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  font-family: 'Merriweather', serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.bond-diagram::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 3px;
+  background: var(--gradient-3);
+}
+
+.bond-diagram-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Bond Display Row */
+.bond-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  padding: 0.75rem 0;
+  font-size: 1.25rem;
+  line-height: 2;
+}
+
+/* Individual atom/group */
+.atom {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem 0.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  position: relative;
+}
+
+.atom-c { color: #e2e8f0; }
+.atom-o { color: #ef4444; }
+.atom-h { color: #94a3b8; }
+.atom-n { color: #3b82f6; }
+.atom-halogen { color: #22c55e; }
+.atom-metal { color: #a78bfa; }
+.atom-group { color: #f59e0b; }
+
+/* Bond types */
+.bond {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.1rem;
+  padding: 0 0.15rem;
+  position: relative;
+}
+
+.bond-single { color: var(--text-secondary); }
+.bond-double { color: var(--primary); font-weight: 700; }
+.bond-triple { color: var(--accent); font-weight: 700; }
+
+/* Bond Breaking - red dashed with animation */
+.bond-break {
+  color: #ef4444 !important;
+  text-decoration: line-through;
+  text-decoration-color: #ef4444;
+  text-decoration-thickness: 2px;
+  animation: bondBreakPulse 2s ease-in-out infinite;
+  position: relative;
+}
+
+.bond-break::after {
+  content: '✂';
+  font-size: 0.7rem;
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ef4444;
+}
+
+/* Bond Forming - green glow with animation */
+.bond-form {
+  color: #22c55e !important;
+  text-shadow: 0 0 8px rgba(34, 197, 94, 0.6);
+  animation: bondFormGlow 2s ease-in-out infinite;
+  font-weight: 700;
+  position: relative;
+}
+
+.bond-form::after {
+  content: '✦';
+  font-size: 0.6rem;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #22c55e;
+}
+
+@keyframes bondBreakPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes bondFormGlow {
+  0%, 100% { text-shadow: 0 0 8px rgba(34, 197, 94, 0.4); }
+  50% { text-shadow: 0 0 16px rgba(34, 197, 94, 0.8), 0 0 30px rgba(34, 197, 94, 0.3); }
+}
+
+/* Electron flow arrow */
+.e-flow {
+  display: inline-block;
+  color: #f59e0b;
+  font-size: 1.3rem;
+  margin: 0 0.3rem;
+  animation: electronFlow 1.5s ease-in-out infinite;
+}
+
+@keyframes electronFlow {
+  0% { transform: translateX(-3px); opacity: 0.6; }
+  50% { transform: translateX(3px); opacity: 1; }
+  100% { transform: translateX(-3px); opacity: 0.6; }
+}
+
+/* Bond Legend */
+.bond-legend {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin: 1rem 0 0.5rem;
+  padding: 0.75rem 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem;
+}
+
+.bond-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--text-secondary);
+}
+
+.legend-swatch {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+}
+
+.legend-break { background: rgba(239, 68, 68, 0.3); border: 1.5px solid #ef4444; }
+.legend-form { background: rgba(34, 197, 94, 0.3); border: 1.5px solid #22c55e; }
+.legend-flow { background: rgba(245, 158, 11, 0.3); border: 1.5px solid #f59e0b; }
+
+/* Transition Arrow between stages */
+.stage-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  color: var(--accent);
+  margin: 0.5rem 0;
+  opacity: 0.7;
+}
+
+/* Charge labels */
+.charge {
+  font-size: 0.75rem;
+  vertical-align: super;
+  font-weight: 700;
+}
+
+.charge-pos { color: #3b82f6; }
+.charge-neg { color: #ef4444; }
+.charge-partial-pos { color: rgba(59, 130, 246, 0.7); }
+.charge-partial-neg { color: rgba(239, 68, 68, 0.7); }
+
+/* Lone pair indicator */
+.lone-pair {
+  font-size: 0.65rem;
+  vertical-align: super;
+  color: var(--accent);
+  letter-spacing: 1px;
+}
+
+/* Bond summary callout */
+.bond-summary {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.12) 0%, rgba(20, 184, 166, 0.12) 100%);
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  margin-top: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.bond-summary h5 {
+  color: var(--secondary);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.bond-summary ul {
+  list-style: none;
+  padding: 0;
+}
+
+.bond-summary li {
+  padding: 0.25rem 0;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.bond-summary li::before {
+  font-size: 0.85rem;
+}
+
+.bond-summary .breaks::before {
+  content: '🔴';
+}
+
+.bond-summary .forms::before {
+  content: '🟢';
+}
+
+.bond-summary .moves::before {
+  content: '🟡';
+}
+
+/* Enhanced accordion content max-height for detailed content */
+.accordion-item.active .accordion-content {
+  max-height: 5000px;
+}
